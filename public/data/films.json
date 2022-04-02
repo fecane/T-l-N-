@@ -1,0 +1,26 @@
+{
+  "catégories": [
+    {
+      "id": "nouveau",
+      "titre": "Nouveau",
+      "imageFond": "https://link.com/to/image.jpg"
+    },
+    {
+      "id": "populaire",
+      "titre": "Populaire",
+      "couleurFond": "#ebd534"
+    }
+  ],
+  "films": [
+    {
+      "id": "W2PornwWUlA",
+      "titre": "Électrique",
+      "créateur": "Sluice",
+      "description": "Le premier album de Sluice, Le succès par le travail, est disponible via Acadian Embassy.",
+      "date": "2021-05-13",
+      "imageFond": "https://link.com/to/image.jpg",
+      "catégories": ["nouveau", "populaire"]
+    }
+  ],
+  "grandTitres": ["W2PornwWUlA"]
+}
