@@ -1,13 +1,23 @@
 import React from "react";
 import Header from "../header/Header";
+import Navbar from "../header/Navbar";
 import Footer from "../header/Footer";
-import ListsOfMovies from "../movieslist/ListsOfMovies";
+import { useFilmCategories } from "../context/FilmContext";
+import FilmListScroller from "../components/FilmListScroller";
 
 const HomePage = () => {
+  const categories = useFilmCategories();
   return (
-    <div>}
+    <div>
+      <Navbar />
       <Header />
-      <ListsOfMovies />
+      <div>
+        {categories.map((category) => (
+          <div key={category.id}>
+            <FilmListScroller heading={category.title} id={category.id} />
+          </div>
+        ))}
+      </div>
       <Footer />
     </div>
   );

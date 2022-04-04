@@ -3,12 +3,29 @@ import FilmFacade from "./FilmFacade";
 
 const FilmContext = createContext();
 
+function useFilm(id) {
+  const context = React.useContext(FilmContext);
+  if (!context) {
+    return undefined;
+  }
+  return context.getFilm(id);
+}
+
+
 function useFilmCategories() {
   const context = React.useContext(FilmContext);
   if (!context) {
     return [];
   }
   return context.getCategories();
+}
+
+function useFilmsByCategory(id) {
+  const context = React.useContext(FilmContext);
+  if (!context) {
+    return [];
+  }
+  return context.getFilmsByCategory(id);
 }
 
 function useFilmSpotlight() {
@@ -39,4 +56,4 @@ function FilmContextProvider({ children }) {
   );
 }
 
-export { FilmContextProvider, useFilmCategories, useFilmSpotlight };
+export { FilmContextProvider, useFilm, useFilmCategories, useFilmsByCategory, useFilmSpotlight };

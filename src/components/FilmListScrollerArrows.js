@@ -1,7 +1,7 @@
 import React from "react";
 import { VisibilityContext } from "react-horizontal-scrolling-menu";
 
-function Arrow({
+function FilmListScrollerArrow({
   children,
   disabled,
   onClick
@@ -12,6 +12,7 @@ function Arrow({
 }) {
   return (
     <button
+      className="film-list-scroller-menu-arrow"
       disabled={disabled}
       onClick={onClick}
       style={{
@@ -29,7 +30,7 @@ function Arrow({
   );
 }
 
-export function LeftArrow() {
+export function LeftFilmListScrollerArrow() {
   const {
     isFirstItemVisible,
     scrollPrev,
@@ -41,39 +42,40 @@ export function LeftArrow() {
     !initComplete || (initComplete && isFirstItemVisible)
   );
   React.useEffect(() => {
+    // console.log('left', visibleItemsWithoutSeparators.length,isFirstItemVisible )
     // NOTE: detect if whole component visible
-    if (visibleItemsWithoutSeparators.length) {
+    // if (visibleItemsWithoutSeparators.length) {
       setDisabled(isFirstItemVisible);
-    }
+    // }
   }, [isFirstItemVisible, visibleItemsWithoutSeparators]);
 
   return (
-    <Arrow disabled={disabled} onClick={() => scrollPrev()}>
+    <FilmListScrollerArrow disabled={disabled} onClick={() => scrollPrev()}>
       &lt;
-    </Arrow>
+    </FilmListScrollerArrow>
   );
 }
 
-export function RightArrow() {
+export function RightFilmListScrollerArrow() {
   const {
     isLastItemVisible,
     scrollNext,
     visibleItemsWithoutSeparators
   } = React.useContext(VisibilityContext);
 
-  // console.log({ isLastItemVisible });
   const [disabled, setDisabled] = React.useState(
     !visibleItemsWithoutSeparators.length && isLastItemVisible
   );
   React.useEffect(() => {
-    if (visibleItemsWithoutSeparators.length) {
+    // console.log('right', visibleItemsWithoutSeparators.length,isLastItemVisible )
+    // if (visibleItemsWithoutSeparators.length) {
       setDisabled(isLastItemVisible);
-    }
+    // }
   }, [isLastItemVisible, visibleItemsWithoutSeparators]);
 
   return (
-    <Arrow disabled={disabled} onClick={() => scrollNext()}>
+    <FilmListScrollerArrow disabled={disabled} onClick={() => scrollNext()}>
       &gt;
-    </Arrow>
+    </FilmListScrollerArrow>
   );
 }

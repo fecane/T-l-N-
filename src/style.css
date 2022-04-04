@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background: #0d0d0d;
+  background: black;
   color: white;
   font-family: Helvetica;
 }
@@ -17,11 +17,11 @@ body {
 /*header*/
 nav {
   background: black;
-  color: red;
-  height: 65px;
+  color: #f20057;
+  height: 80px;
   padding-left: 6%;
   padding-right: 6%;
-  padding-top: 13px;
+  padding-top: 15px;
   box-sizing: border-box;
 }
 
@@ -31,13 +31,18 @@ nav {
 }
 
 .logo a {
-  color: #cc0000;
+  color: #f20057;
   text-decoration: none;
 }
 
 .logo a:hover {
-  color: #e60000;
+  color: #f20057;
 }
+
+.logo-image {
+  height: 45px;
+}
+
 
 .search-bar {
   float: right;
@@ -45,14 +50,14 @@ nav {
 
 .search-input {
   background: none;
-  color: #cc0000;
-  border: 1px solid #cc0000;
+  color: #f20057;
+  border: 1px solid #f20057;
   outline: none;
   border-radius: 8px;
   padding: 5px;
   padding-left: 15px;
   width: 250px;
-  height: 20px;
+  height: 30px;
   font-weight: 600;
   margin-top: 5px;
   position: relative;
@@ -62,7 +67,7 @@ nav {
   background: #0d0d0d;
   width: 265px;
   border-radius: 5px;
-  border: 2px solid #cc0000;
+  border: 2px solid #f20057;
   border-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -86,7 +91,7 @@ nav {
 
 .search-values a {
   text-decoration: none;
-  color: #e60000;
+  color: #f20057;
 }
 
 .search-values a:hover {
@@ -118,20 +123,20 @@ nav {
 }
 
 .popularInfo button {
-  background: #cc0000;
+  background: #f20057;
   color: white;
   height: 50px;
   width: 200px;
   margin-top: 20px;
   font-size: 20px;
   outline: none;
-  border: 1px solid red;
+  border: 1px solid #f20057;
   cursor: pointer;
   font-weight: lighter;
 }
 
 .popularInfo button:hover {
-  background: #e60000;
+  background: #f20057;
 }
 
 .switchImg {
@@ -167,25 +172,50 @@ nav {
 }
 
 .lists h2 {
-  padding-left: 70px;
+  padding-left: 60px;
   margin-bottom: 10px;
 }
 
-.menu-item {
-  padding: 0px;
-  margin: 5px 2px;
-  user-select: none;
-  cursor: pointer;
-  border: none;
-}
-.menu-item-wrapper.active {
-  border: 1px blue solid;
-}
-.menu-item.active {
-  border: 1px green solid;
+.film-list-scroller {
+  align-items: center;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.movie-card {
+.film-list-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.film-list-scroller-item {
+  padding: 0px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  border: none;
+}
+
+.film-list-scroller-separator {
+  margin: 5px 2px;
+}
+
+.film-list-scroller-menu-arrow {
+  border: 0;
+  background-color: transparent;
+  color: #f20057;
+  font-size: 40px;
+  padding: 20px;
+  cursor: pointer !important;
+}
+
+.film-list-scroller-menu-arrow:disabled {
+  padding: 20px;
+  color: #75002b;
+  opacity: 1 !important;
+  cursor: default !important;
+}
+
+.film-card {
   position: relative;
   width: 300px;
   height: 170px;
@@ -193,15 +223,7 @@ nav {
   background: black;
 }
 
-img {
-  width: 300px;
-  height: 170px;
-  vertical-align: 0px;
-  transition: all 0.7s;
-  user-select: none;
-}
-
-.movie-title {
+.film-title {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -213,43 +235,43 @@ img {
   color: #fff;
   visibility: hidden;
   opacity: 0;
-  /* transition effect. not necessary */
   transition: opacity 0.2s, visibility 0.2s;
 }
 
-.movie-card:hover {
+.film-title.visible {
+  color: #fff;
+  opacity: 1;
+  visibility: visible;
+}
+
+.film-card-image {
+  width: 300px;
+  height: 170px;
+  vertical-align: 0px;
+  transition: all 0.7s;
+  user-select: none;
+}
+
+.film-card:hover {
   width: 330px;
   height: 190px;
 }
 
-.movie-card:hover .movie-title {
+.film-card:hover .film-title {
   visibility: visible;
   opacity: 1;
 }
 
-.movie-card:hover img {
+.film-card:hover .film-card-image {
   width: 330px;
   height: 190px;
   vertical-align: -12px;
   opacity: 0.3;
 }
 
-.scroll-menu-arrow {
-  padding: 20px;
-  cursor: pointer;
-}
-
 .horizontal-menu {
   height: 220px;
 }
-
-.arrow-prev,
-.arrow-next {
-  color: red;
-  font-size: 40px;
-}
-
-/* movie info */
 
 .content {
   width: 50%;
@@ -310,16 +332,25 @@ i {
   color: gold;
 }
 
-footer {
-  height: 60px;
+.footer {
+  height: 80px;
+  margin-top: 50px;
+  padding: 20px 20px 50px;
   background: black;
   color: white;
-  border-top: 1px solid red;
-  text-align: center;
+  border-top: 1px solid #f20057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px
 }
 
-footer p {
-  margin: 20px auto;
+.footer-logo-fecane {
+  height: 40px;
+}
+
+.footer-logo-canada {
+  height: 25px;
 }
 
 .back-height {
@@ -365,14 +396,24 @@ footer p {
     margin-bottom: 0;
   }
 
-  .movie-card,
-  img {
+  .film-title {
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .film-list-scroller-item {
+    height: 160px;
+  }
+
+  .film-card,
+  .film-card-image {
     width: 230px;
     height: 140px;
   }
 
-  .movie-card:hover,
-  .movie-card:hover img {
+  .film-card:hover,
+  .film-card:hover .film-card-image {
     width: 260px;
     height: 160px;
   }
@@ -386,7 +427,7 @@ footer p {
     padding: 10px;
   }
 
-  /*movie-info*/
+  /*film-info*/
   .content {
     width: 90%;
     font-size: 93%;
@@ -399,7 +440,7 @@ footer p {
 
 @media only screen and (max-width: 690px) {
   nav {
-    height: 100px;
+    height: 130px;
   }
   .logo,
   .search-bar {
@@ -411,6 +452,7 @@ footer p {
   }
 
   .search-input {
+    height: 30px;
     width: 95%;
   }
 
@@ -426,24 +468,29 @@ footer p {
     margin: 0;
   }
 
-  .lists h2 {
-    padding-left: 5px;
-    margin-bottom: 10px;
+  .film-title {
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
   }
 
-  .movie-card,
-  img {
+  .film-list-scroller-item {
+    height: 120px;
+  }
+
+  .film-card,
+  .film-card-image {
     width: 190px;
     height: 100px;
   }
 
-  .movie-card:hover,
-  .movie-card:hover img {
+  .film-card:hover,
+  .film-card:hover .film-card-image {
     width: 220px;
     height: 120px;
   }
 
-  .movie-title {
+  .film-title {
     font-size: 14px;
   }
 }
@@ -477,15 +524,25 @@ footer p {
   .horizontal-menu {
     height: 190px;
   }
+  
+  .film-title {
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+  }
 
-  .movie-card,
-  img {
+  .film-list-scroller-item {
+    height: 110px;
+  }
+
+  .film-card,
+  .film-card-image {
     width: 160px;
     height: 90px;
   }
 
-  .movie-card:hover,
-  .movie-card:hover img {
+  .film-card:hover,
+  .film-card:hover .film-card-image {
     width: 190px;
     height: 110px;
   }

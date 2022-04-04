@@ -1,78 +1,39 @@
 import React from "react";
+import ReactMarkdown from 'react-markdown'
+import { toFormatDate } from "../utils/format_date";
 
-const FilmInfo = ({ movie, credits, video }) => {
-  const time_convert = (num) => {
-    const hours = Math.floor(num / 60);
-    const minutes = num % 60;
-    return `${hours}h ${minutes}min`;
-  };
-
+const FilmInfo = ({ film }) => {
+  console.log(film);
   const backgroundImg = {
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), url("https://image.tmdb.org/t/p/original/${
-      movie.backdrop_path
-    }")`
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.7)), url("${film.backgroundImage}")`,
   };
 
-  const backwithPoster = {
-    backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 60%), url("https://image.tmdb.org/t/p/original/${
-      movie.poster_path
-    }")`
+  const backgroundColor = {
+    backgroundImage: `linear-gradient(${film.backgroundColor} 10%, rgba(0, 0, 0, 0.8))`,
   };
 
   return (
     <div
-      style={movie.backdrop_path !== null ? backgroundImg : backwithPoster}
+      style={film.backgroundImage ? backgroundImg : backgroundColor}
       className="back-height"
     >
       <div className="content">
-        <h1>{movie.title}</h1>
-        {video.length > 0 ? (
-          <div className="video">
-            <iframe
-              src={`https://www.youtube.com/embed/${video[0].key}`}
-              title={video[0].name}
-            />
-          </div>
-        ) : "no video"}
+        <h1>{film.title}</h1>
+        <div className="video">
+          <iframe
+            src={`https://www.youtube.com/embed/${film.id}?controls=0&modestbranding=1&iv_load_policy=3&hl=fr-ca`}
+            title={film.title}
+          />
+        </div>
 
-        <p className="year-run-vote">
-          <span className="year">
-            {new Date(movie.release_date).getFullYear()}
-          </span>
-          <span className="run">
-            {" "}
-            {movie.runtime && time_convert(movie.runtime)}
-          </span>
-          <span className="vote">
-            <i className="fas fa-star" /> {movie.vote_average}
-          </span>
-        </p>
         <div className="overview-container">
-          <p className="overview">{movie.overview}</p>
           <p>
-            <span className="greyed">Starring: </span>
-            {credits.cast &&
-              credits.cast.map((cast, i) => {
-                if (i < 4) return <span key={cast.cast_id}>{cast.name}, </span>;
-                if (i === 4) return <span key={cast.cast_id}>{cast.name}</span>;
-                else return null;
-              })}
+            <span className="greyed">Date : </span> {toFormatDate(film.date)}
           </p>
-
           <p>
-            <span className="greyed">Genres: </span>
-            {movie.genres.map((genre, i, arr) => {
-              if (i === arr.length - 1)
-                return <span key={genre.id}>{genre.name}</span>;
-              return <span key={genre.id}>{genre.name}, </span>;
-            })}
+            <span className="greyed">Créateur : </span> {film.creator}
           </p>
-
-          {credits && credits.crew.length > 0 && (
-            <p>
-              <span className="greyed">Director: </span> {credits.crew[0].name}
-            </p>
-          )}
+          <ReactMarkdown className="overview">{film.description}</ReactMarkdown>
         </div>
       </div>
     </div>

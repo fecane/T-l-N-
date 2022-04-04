@@ -62,7 +62,7 @@ class Search extends Component {
           name="searchVal"
           onChange={this.handleChange}
           className="search-input"
-          placeholder="Search for movie..."
+          placeholder="Rechercher…"
           value={val}
         />
         {showRes && (

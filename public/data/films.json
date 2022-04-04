@@ -14,13 +14,59 @@
   "films": [
     {
       "id": "W2PornwWUlA",
+      "titre": "Électrique *",
+      "créateur": "Sluice",
+      "sommaire": "Le premier album de Sluice.",
+      "description": "Le premier album de Sluice, Le succès par le travail, est disponible via Acadian Embassy.",
+      "date": "2021-05-13",
+      "couleurFond": "purple",
+      "catégories": ["nouveau"]
+    },
+    {
+      "id": "akffdr0u-iY",
+      "titre": "Allons-y *",
+      "créateur": "Michelle Deveau",
+      "description": "Vidéo officielle pour *Allons-y* par Michelle Deveau.",
+      "date": "2020-08-21",
+      "imageFond": "/data/akffdr0u-iY.jpg",
+      "image": "/data/akffdr0u-iY.jpg",
+      "catégories": ["nouveau", "populaire"]
+    },
+    {
+      "id": "W2PornwWUlA1",
       "titre": "Électrique",
       "créateur": "Sluice",
       "description": "Le premier album de Sluice, Le succès par le travail, est disponible via Acadian Embassy.",
       "date": "2021-05-13",
-      "imageFond": "https://link.com/to/image.jpg",
+      "imageFond": "/data/W2PornwWUlA.jpg",
+      "catégories": ["nouveau"]
+    },
+    {
+      "id": "akffdr0u-iY1",
+      "titre": "Allons-y",
+      "créateur": "Michelle Deveau",
+      "description": "Vidéo officielle pour Allons-y par Michelle Deveau.",
+      "date": "2020-08-21",
+      "imageFond": "/data/akffdr0u-iY.jpg",
+      "catégories": ["nouveau", "populaire"]
+    },    {
+      "id": "W2PornwWUlA2",
+      "titre": "Électrique",
+      "créateur": "Sluice",
+      "description": "Le premier album de Sluice, Le succès par le travail, est disponible via Acadian Embassy.",
+      "date": "2021-05-13",
+      "imageFond": "/data/W2PornwWUlA.jpg",
+      "catégories": ["nouveau"]
+    },
+    {
+      "id": "akffdr0u-iYd2",
+      "titre": "Allons-y",
+      "créateur": "Michelle Deveau",
+      "description": "Vidéo officielle pour Allons-y par Michelle Deveau.",
+      "date": "2020-08-21",
+      "imageFond": "/data/akffdr0u-iY.jpg",
       "catégories": ["nouveau", "populaire"]
     }
   ],
-  "grandTitres": ["W2PornwWUlA"]
+  "grandTitres": ["W2PornwWUlA", "akffdr0u-iY"]
 }
