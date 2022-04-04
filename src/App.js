@@ -1,23 +1,23 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import FilmPage from "./pages/FilmPage";
+import VideoPage from "./pages/VideoPage";
 import "./style.css";
-import { FilmContextProvider } from "./context/FilmContext";
+import { VideoContextProvider } from "./context/VideoContext";
 
 class App extends Component {
   render() {
     return (
-      <FilmContextProvider>
+      <VideoContextProvider>
         <BrowserRouter>
           <div className="App">
             <Routes>
               <Route exact path="/" element={<HomePage />} />
-              <Route path="/films/:filmID" element={<FilmPage />} />
+              <Route path="/videos/:videoID" element={<VideoPage />} />
             </Routes>
           </div>
         </BrowserRouter>
-      </FilmContextProvider>
+      </VideoContextProvider>
     );
   }
 }

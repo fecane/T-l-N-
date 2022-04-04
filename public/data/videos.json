@@ -11,7 +11,7 @@
       "couleurFond": "#ebd534"
     }
   ],
-  "films": [
+  "videos": [
     {
       "id": "W2PornwWUlA",
       "titre": "Électrique *",
@@ -33,12 +33,13 @@
       "catégories": ["nouveau", "populaire"]
     },
     {
-      "id": "W2PornwWUlA1",
-      "titre": "Électrique",
-      "créateur": "Sluice",
-      "description": "Le premier album de Sluice, Le succès par le travail, est disponible via Acadian Embassy.",
-      "date": "2021-05-13",
-      "imageFond": "/data/W2PornwWUlA.jpg",
+      "id": "l60CJ8VVDa8",
+      "titre": "Savez-vous comment? Avec Dave LeBlanc *",
+      "créateur": "Société acadienne de Clare",
+      "description": "Voici Dave LeBlanc qui nous présente comment il prépare ses cuillères en bois.",
+      "date": "2022-03-24",
+      "couleurFond": "darkblue",
+      "liste": "PL2-1Yu_NhspShOYMB8PKJAROaZA4RP_OX",
       "catégories": ["nouveau"]
     },
     {
@@ -46,7 +47,7 @@
       "titre": "Allons-y",
       "créateur": "Michelle Deveau",
       "description": "Vidéo officielle pour Allons-y par Michelle Deveau.",
-      "date": "2020-08-21",
+      "date": "1999-08-21",
       "imageFond": "/data/akffdr0u-iY.jpg",
       "catégories": ["nouveau", "populaire"]
     },    {
@@ -54,7 +55,7 @@
       "titre": "Électrique",
       "créateur": "Sluice",
       "description": "Le premier album de Sluice, Le succès par le travail, est disponible via Acadian Embassy.",
-      "date": "2021-05-13",
+      "date": "1999-05-13",
       "imageFond": "/data/W2PornwWUlA.jpg",
       "catégories": ["nouveau"]
     },
@@ -63,10 +64,10 @@
       "titre": "Allons-y",
       "créateur": "Michelle Deveau",
       "description": "Vidéo officielle pour Allons-y par Michelle Deveau.",
-      "date": "2020-08-21",
+      "date": "1999-08-21",
       "imageFond": "/data/akffdr0u-iY.jpg",
       "catégories": ["nouveau", "populaire"]
     }
   ],
-  "grandTitres": ["W2PornwWUlA", "akffdr0u-iY"]
+  "grandTitres": ["l60CJ8VVDa8", "W2PornwWUlA", "akffdr0u-iY"]
 }

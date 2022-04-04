@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import Animate from "react-smooth";
 import { Link } from "react-router-dom";
 import ReactMarkdown from 'react-markdown'
-import { useFilmSpotlight } from "../context/FilmContext";
+import { useVideoSpotlight } from "../context/VideoContext";
 import { toFormatDate } from "../utils/format_date";
 
 const Header = () => {
-  const films = useFilmSpotlight();
+  const videos = useVideoSpotlight();
   const [current, setCurrent] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const [timer, setTimer] = useState(undefined);
@@ -16,7 +16,7 @@ const Header = () => {
       return;
     }
     const t = setTimeout(() => {
-      if (current + 1 < films.length) {
+      if (current + 1 < videos.length) {
         setCurrent(current + 1);
       } else {
         setCurrent(0);
@@ -26,7 +26,7 @@ const Header = () => {
     setTimer(t);
     setIsRunning(true);
     return () => clearTimeout(timer);
-  }, [isRunning, timer, films, current]);
+  }, [isRunning, timer, videos, current]);
 
   const handleSliderClick = (index) => {
     setCurrent(index);
@@ -35,33 +35,33 @@ const Header = () => {
 
   const render = () => {
     const backgroundImg = {
-      backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0) 60%), url("${films[current].backgroundImage}")`,
+      backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0) 60%), url("${videos[current].backgroundImage}")`,
     };
 
     const backgroundColor = {
-      backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.8) 40%, ${films[current].backgroundColor})`,
+      backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.8) 40%, ${videos[current].backgroundColor})`,
     };
     return (
-      <div key={films[current].id}>
+      <div key={videos[current].id}>
         <Animate to="1" from="0.2" attributeName="opacity">
           <div
             style={
-              films[current].backgroundImage ? backgroundImg : backgroundColor
+              videos[current].backgroundImage ? backgroundImg : backgroundColor
             }
             className="bgImage"
           >
             <div className="popularInfo">
-              <h1>{films[current].title}</h1>
+              <h1>{videos[current].title}</h1>
               <p className="release-date">
-                Date : {toFormatDate(films[current].date)}
+                Date : {toFormatDate(videos[current].date)}
               </p>
-              <ReactMarkdown className="header-overview">{films[current].summary ?? films[current].description}</ReactMarkdown>
-              <Link to={`/films/${films[current].id}`}>
-                <button>Regarder</button>
+              <ReactMarkdown className="header-overview">{videos[current].summary ?? videos[current].description}</ReactMarkdown>
+              <Link to={`/videos/${videos[current].id}`}>
+                <button>Visionner</button>
               </Link>
             </div>
             <div className="switchImg">
-              {films.map((movie, index) => (
+              {videos.map((movie, index) => (
                 <div
                   key={index}
                   className={current === index ? "active" : null}
@@ -77,7 +77,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="popular">{films.length > 0 ? render() : null}</div>
+      <div className="popular">{videos.length > 0 ? render() : null}</div>
     </header>
   );
 };

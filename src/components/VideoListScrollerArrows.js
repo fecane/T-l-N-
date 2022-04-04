@@ -1,7 +1,7 @@
 import React from "react";
 import { VisibilityContext } from "react-horizontal-scrolling-menu";
 
-function FilmListScrollerArrow({
+function VideoListScrollerArrow({
   children,
   disabled,
   onClick
@@ -12,7 +12,7 @@ function FilmListScrollerArrow({
 }) {
   return (
     <button
-      className="film-list-scroller-menu-arrow"
+      className="video-list-scroller-menu-arrow"
       disabled={disabled}
       onClick={onClick}
       style={{
@@ -30,7 +30,7 @@ function FilmListScrollerArrow({
   );
 }
 
-export function LeftFilmListScrollerArrow() {
+export function LeftVideoListScrollerArrow() {
   const {
     isFirstItemVisible,
     scrollPrev,
@@ -50,13 +50,13 @@ export function LeftFilmListScrollerArrow() {
   }, [isFirstItemVisible, visibleItemsWithoutSeparators]);
 
   return (
-    <FilmListScrollerArrow disabled={disabled} onClick={() => scrollPrev()}>
+    <VideoListScrollerArrow disabled={disabled} onClick={() => scrollPrev()}>
       &lt;
-    </FilmListScrollerArrow>
+    </VideoListScrollerArrow>
   );
 }
 
-export function RightFilmListScrollerArrow() {
+export function RightVideoListScrollerArrow() {
   const {
     isLastItemVisible,
     scrollNext,
@@ -74,8 +74,8 @@ export function RightFilmListScrollerArrow() {
   }, [isLastItemVisible, visibleItemsWithoutSeparators]);
 
   return (
-    <FilmListScrollerArrow disabled={disabled} onClick={() => scrollNext()}>
+    <VideoListScrollerArrow disabled={disabled} onClick={() => scrollNext()}>
       &gt;
-    </FilmListScrollerArrow>
+    </VideoListScrollerArrow>
   );
 }

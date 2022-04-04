@@ -2,11 +2,11 @@ import React from "react";
 import Header from "../header/Header";
 import Navbar from "../header/Navbar";
 import Footer from "../header/Footer";
-import { useFilmCategories } from "../context/FilmContext";
-import FilmListScroller from "../components/FilmListScroller";
+import { useVideoCategories } from "../context/VideoContext";
+import VideoListScroller from "../components/VideoListScroller";
 
 const HomePage = () => {
-  const categories = useFilmCategories();
+  const categories = useVideoCategories();
   return (
     <div>
       <Navbar />
@@ -14,7 +14,7 @@ const HomePage = () => {
       <div>
         {categories.map((category) => (
           <div key={category.id}>
-            <FilmListScroller heading={category.title} id={category.id} />
+            <VideoListScroller heading={category.title} id={category.id} />
           </div>
         ))}
       </div>

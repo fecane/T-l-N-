@@ -176,17 +176,17 @@ nav {
   margin-bottom: 10px;
 }
 
-.film-list-scroller {
+.video-list-scroller {
   align-items: center;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-.film-list-scroller::-webkit-scrollbar {
+.video-list-scroller::-webkit-scrollbar {
   display: none;
 }
 
-.film-list-scroller-item {
+.video-list-scroller-item {
   padding: 0px;
   height: 190px;
   display: flex;
@@ -195,11 +195,11 @@ nav {
   border: none;
 }
 
-.film-list-scroller-separator {
+.video-list-scroller-separator {
   margin: 5px 2px;
 }
 
-.film-list-scroller-menu-arrow {
+.video-list-scroller-menu-arrow {
   border: 0;
   background-color: transparent;
   color: #f20057;
@@ -208,14 +208,14 @@ nav {
   cursor: pointer !important;
 }
 
-.film-list-scroller-menu-arrow:disabled {
+.video-list-scroller-menu-arrow:disabled {
   padding: 20px;
   color: #75002b;
   opacity: 1 !important;
   cursor: default !important;
 }
 
-.film-card {
+.video-card {
   position: relative;
   width: 300px;
   height: 170px;
@@ -223,14 +223,15 @@ nav {
   background: black;
 }
 
-.film-title {
+.video-title {
   position: absolute;
   top: 40%;
   left: 50%;
+  max-width: 300px;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 100%;
+  width: 90%;
   white-space: initial;
   color: #fff;
   visibility: hidden;
@@ -238,13 +239,13 @@ nav {
   transition: opacity 0.2s, visibility 0.2s;
 }
 
-.film-title.visible {
+.video-title.visible {
   color: #fff;
   opacity: 1;
   visibility: visible;
 }
 
-.film-card-image {
+.video-card-image {
   width: 300px;
   height: 170px;
   vertical-align: 0px;
@@ -252,17 +253,17 @@ nav {
   user-select: none;
 }
 
-.film-card:hover {
+.video-card:hover {
   width: 330px;
   height: 190px;
 }
 
-.film-card:hover .film-title {
+.video-card:hover .video-title {
   visibility: visible;
   opacity: 1;
 }
 
-.film-card:hover .film-card-image {
+.video-card:hover .video-card-image {
   width: 330px;
   height: 190px;
   vertical-align: -12px;
@@ -396,24 +397,24 @@ i {
     margin-bottom: 0;
   }
 
-  .film-title {
+  .video-title {
     color: #fff;
     opacity: 1;
     visibility: visible;
   }
 
-  .film-list-scroller-item {
+  .video-list-scroller-item {
     height: 160px;
   }
 
-  .film-card,
-  .film-card-image {
+  .video-card,
+  .video-card-image {
     width: 230px;
     height: 140px;
   }
 
-  .film-card:hover,
-  .film-card:hover .film-card-image {
+  .video-card:hover,
+  .video-card:hover .video-card-image {
     width: 260px;
     height: 160px;
   }
@@ -427,7 +428,7 @@ i {
     padding: 10px;
   }
 
-  /*film-info*/
+  /*video-info*/
   .content {
     width: 90%;
     font-size: 93%;
@@ -468,29 +469,29 @@ i {
     margin: 0;
   }
 
-  .film-title {
+  .video-title {
     color: #fff;
     opacity: 1;
     visibility: visible;
   }
 
-  .film-list-scroller-item {
+  .video-list-scroller-item {
     height: 120px;
   }
 
-  .film-card,
-  .film-card-image {
+  .video-card,
+  .video-card-image {
     width: 190px;
     height: 100px;
   }
 
-  .film-card:hover,
-  .film-card:hover .film-card-image {
+  .video-card:hover,
+  .video-card:hover .video-card-image {
     width: 220px;
     height: 120px;
   }
 
-  .film-title {
+  .video-title {
     font-size: 14px;
   }
 }
@@ -525,24 +526,24 @@ i {
     height: 190px;
   }
   
-  .film-title {
+  .video-title {
     color: #fff;
     opacity: 1;
     visibility: visible;
   }
 
-  .film-list-scroller-item {
+  .video-list-scroller-item {
     height: 110px;
   }
 
-  .film-card,
-  .film-card-image {
+  .video-card,
+  .video-card-image {
     width: 160px;
     height: 90px;
   }
 
-  .film-card:hover,
-  .film-card:hover .film-card-image {
+  .video-card:hover,
+  .video-card:hover .video-card-image {
     width: 190px;
     height: 110px;
   }
