@@ -21,11 +21,20 @@ const VideoCard = ({ video }) => {
       >
         {video.image ? (
           <div>
-            <img className="video-card-image" src={video.image} alt={video.title} />
+            <img
+              className="video-card-image"
+              src={video.image}
+              alt={video.title}
+            />
             <h3 className="video-title">{video.title}</h3>
           </div>
         ) : (
-          <div className="video-card-image" style={{backgroundColor: video.backgroundColor}}><h3 className="video-title visible">{video.title}</h3></div>
+          <div
+            className="video-card-image"
+            style={{ backgroundColor: video.backgroundColor }}
+          >
+            <h3 className="video-title visible">{video.title}</h3>
+          </div>
         )}
 
         {isHovering && <h3 className="video-title">{video.title}</h3>}

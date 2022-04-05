@@ -1,7 +1,10 @@
 import React from "react";
 import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import { useVideosByCategory } from "../context/VideoContext.js";
-import { LeftVideoListScrollerArrow, RightVideoListScrollerArrow } from "./VideoListScrollerArrows.js";
+import {
+  LeftVideoListScrollerArrow,
+  RightVideoListScrollerArrow,
+} from "./VideoListScrollerArrows.js";
 import VideoListScrollerItem from "./VideoListScrollerItem.js";
 
 const VideoListScroller = ({ id, heading }) => {
@@ -21,7 +24,7 @@ const VideoListScroller = ({ id, heading }) => {
         clickWhenDrag={false}
       >
         {videos.map((video, index) => (
-          <VideoListScrollerItem key={index} itemId={index} video={video}/>
+          <VideoListScrollerItem key={index} itemId={index} video={video} />
         ))}
       </ScrollMenu>
     </div>

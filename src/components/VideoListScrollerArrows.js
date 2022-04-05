@@ -4,11 +4,11 @@ import { VisibilityContext } from "react-horizontal-scrolling-menu";
 function VideoListScrollerArrow({
   children,
   disabled,
-  onClick
+  onClick,
 }: {
-  children: React.ReactNode;
-  disabled: boolean;
-  onClick: VoidFunction;
+  children: React.ReactNode,
+  disabled: boolean,
+  onClick: VoidFunction,
 }) {
   return (
     <button
@@ -22,7 +22,7 @@ function VideoListScrollerArrow({
         justifyContent: "center",
         right: "1%",
         opacity: disabled ? "0" : "1",
-        userSelect: "none"
+        userSelect: "none",
       }}
     >
       {children}
@@ -35,7 +35,7 @@ export function LeftVideoListScrollerArrow() {
     isFirstItemVisible,
     scrollPrev,
     visibleItemsWithoutSeparators,
-    initComplete
+    initComplete,
   } = React.useContext(VisibilityContext);
 
   const [disabled, setDisabled] = React.useState(
@@ -45,7 +45,7 @@ export function LeftVideoListScrollerArrow() {
     // console.log('left', visibleItemsWithoutSeparators.length,isFirstItemVisible )
     // NOTE: detect if whole component visible
     // if (visibleItemsWithoutSeparators.length) {
-      setDisabled(isFirstItemVisible);
+    setDisabled(isFirstItemVisible);
     // }
   }, [isFirstItemVisible, visibleItemsWithoutSeparators]);
 
@@ -57,11 +57,8 @@ export function LeftVideoListScrollerArrow() {
 }
 
 export function RightVideoListScrollerArrow() {
-  const {
-    isLastItemVisible,
-    scrollNext,
-    visibleItemsWithoutSeparators
-  } = React.useContext(VisibilityContext);
+  const { isLastItemVisible, scrollNext, visibleItemsWithoutSeparators } =
+    React.useContext(VisibilityContext);
 
   const [disabled, setDisabled] = React.useState(
     !visibleItemsWithoutSeparators.length && isLastItemVisible
@@ -69,7 +66,7 @@ export function RightVideoListScrollerArrow() {
   React.useEffect(() => {
     // console.log('right', visibleItemsWithoutSeparators.length,isLastItemVisible )
     // if (visibleItemsWithoutSeparators.length) {
-      setDisabled(isLastItemVisible);
+    setDisabled(isLastItemVisible);
     // }
   }, [isLastItemVisible, visibleItemsWithoutSeparators]);
 

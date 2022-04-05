@@ -9,26 +9,24 @@ class Search extends Component {
   state = {
     val: "",
     searchVal: [],
-    showRes: false
+    showRes: false,
   };
 
   componentDidMount() {
     this.mounted = true;
   }
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({ val: e.target.value });
     if (e.target.value !== "")
       fetch(`
-    https://api.themoviedb.org/3/search/movie?api_key=17117ab9c18276d48d8634390c025df4&language=en-US&query=${
-      e.target.value
-    }&page=1&include_adult=false`)
-        .then(r => r.json())
-        .then(data => {
+    https://api.themoviedb.org/3/search/movie?api_key=17117ab9c18276d48d8634390c025df4&language=en-US&query=${e.target.value}&page=1&include_adult=false`)
+        .then((r) => r.json())
+        .then((data) => {
           if (this.mounted)
             this.setState({ searchVal: data.results, showRes: true });
         })
-        .catch(err => console.log(err));
+        .catch((err) => console.log(err));
     else if (e.target.value === "") this.setState({ showRes: false });
   };
 
@@ -44,7 +42,7 @@ class Search extends Component {
     const { val, searchVal, showRes } = this.state;
 
     const moviesList = searchVal.length
-      ? searchVal.map(movie => {
+      ? searchVal.map((movie) => {
           return (
             <li key={movie.id}>
               <Link to={"/" + movie.id} onClick={this.closeRes}>

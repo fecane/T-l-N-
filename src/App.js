@@ -1,23 +1,32 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { VideoContextProvider } from "./context/VideoContext";
+import Navbar from "./header/Navbar";
+import Footer from "./header/Footer";
 import HomePage from "./pages/HomePage";
 import VideoPage from "./pages/VideoPage";
+import CategoryPage from "./pages/CategoryPage";
 import "./style.css";
-import { VideoContextProvider } from "./context/VideoContext";
 
 class App extends Component {
   render() {
     return (
-      <VideoContextProvider>
-        <BrowserRouter>
-          <div className="App">
+      <div className="App">
+        <VideoContextProvider>
+          <BrowserRouter>
+            <Navbar />
             <Routes>
               <Route exact path="/" element={<HomePage />} />
               <Route path="/videos/:videoID" element={<VideoPage />} />
+              <Route
+                path="/categories/:categoryID"
+                element={<CategoryPage />}
+              />
             </Routes>
-          </div>
-        </BrowserRouter>
-      </VideoContextProvider>
+            <Footer />
+          </BrowserRouter>
+        </VideoContextProvider>
+      </div>
     );
   }
 }

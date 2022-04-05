@@ -43,7 +43,6 @@ nav {
   height: 45px;
 }
 
-
 .search-bar {
   float: right;
 }
@@ -343,7 +342,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px
+  gap: 50px;
 }
 
 .footer-logo-fecane {
@@ -525,7 +524,7 @@ i {
   .horizontal-menu {
     height: 190px;
   }
-  
+
   .video-title {
     color: #fff;
     opacity: 1;

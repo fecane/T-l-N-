@@ -1,16 +1,13 @@
 import React from "react";
-import Header from "../header/Header";
-import Navbar from "../header/Navbar";
-import Footer from "../header/Footer";
 import { useVideoCategories } from "../context/VideoContext";
 import VideoListScroller from "../components/VideoListScroller";
+import VideoSpotlight from "../components/VideoSpotlight";
 
 const HomePage = () => {
   const categories = useVideoCategories();
   return (
     <div>
-      <Navbar />
-      <Header />
+      <VideoSpotlight />
       <div>
         {categories.map((category) => (
           <div key={category.id}>
@@ -18,7 +15,6 @@ const HomePage = () => {
           </div>
         ))}
       </div>
-      <Footer />
     </div>
   );
 };

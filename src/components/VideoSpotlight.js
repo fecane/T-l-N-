@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Animate from "react-smooth";
 import { Link } from "react-router-dom";
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from "react-markdown";
 import { useVideoSpotlight } from "../context/VideoContext";
 import { toFormatDate } from "../utils/format_date";
 
-const Header = () => {
+const VideoSpotlight = () => {
   const videos = useVideoSpotlight();
   const [current, setCurrent] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
@@ -55,7 +55,9 @@ const Header = () => {
               <p className="release-date">
                 Date : {toFormatDate(videos[current].date)}
               </p>
-              <ReactMarkdown className="header-overview">{videos[current].summary ?? videos[current].description}</ReactMarkdown>
+              <ReactMarkdown className="header-overview">
+                {videos[current].summary ?? videos[current].description}
+              </ReactMarkdown>
               <Link to={`/videos/${videos[current].id}`}>
                 <button>Visionner</button>
               </Link>
@@ -82,4 +84,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default VideoSpotlight;

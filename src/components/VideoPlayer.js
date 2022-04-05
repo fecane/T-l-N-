@@ -1,5 +1,5 @@
 import React from "react";
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from "react-markdown";
 import { toFormatDate } from "../utils/format_date";
 
 const VideoPlayer = ({ video }) => {
@@ -12,7 +12,7 @@ const VideoPlayer = ({ video }) => {
     backgroundImage: `linear-gradient(${video.backgroundColor} 10%, rgba(0, 0, 0, 0.8))`,
   };
 
-  const playlist = video.playlist ? `&list=${video.playlist}` : '';
+  const playlist = video.playlist ? `&list=${video.playlist}` : "";
 
   return (
     <div
@@ -24,6 +24,7 @@ const VideoPlayer = ({ video }) => {
         <div className="video">
           <iframe
             src={`https://www.youtube.com/embed/${video.id}?controls=1&modestbranding=1&iv_load_policy=3&hl=fr-ca${playlist}`}
+            allow="fullscreen;"
             title={video.title}
           />
         </div>
@@ -35,7 +36,9 @@ const VideoPlayer = ({ video }) => {
           <p>
             <span className="greyed">Créateur : </span> {video.creator}
           </p>
-          <ReactMarkdown className="overview">{video.description}</ReactMarkdown>
+          <ReactMarkdown className="overview">
+            {video.description}
+          </ReactMarkdown>
         </div>
       </div>
     </div>

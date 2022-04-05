@@ -11,7 +11,6 @@ function useVideo(id) {
   return context.getVideo(id);
 }
 
-
 function useVideoCategories() {
   const context = React.useContext(VideoContext);
   if (!context) {
@@ -52,8 +51,16 @@ function VideoContextProvider({ children }) {
   }, []);
 
   return (
-    <VideoContext.Provider value={videoFacade}>{render()}</VideoContext.Provider>
+    <VideoContext.Provider value={videoFacade}>
+      {render()}
+    </VideoContext.Provider>
   );
 }
 
-export { VideoContextProvider, useVideo, useVideoCategories, useVideosByCategory, useVideoSpotlight };
+export {
+  VideoContextProvider,
+  useVideo,
+  useVideoCategories,
+  useVideosByCategory,
+  useVideoSpotlight,
+};
