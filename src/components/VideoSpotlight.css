@@ -1,0 +1,127 @@
+.video-spotlight-background {
+  height: 750px;
+  width: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  z-index: 0;
+}
+
+.video-spotlight-info {
+  position: absolute;
+  top: 20%;
+  left: 6%;
+  width: 40%;
+}
+
+.video-spotlight-title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.video-spotlight-info button {
+  background: #f20057;
+  color: white;
+  height: 50px;
+  width: 200px;
+  margin-top: 20px;
+  font-size: 20px;
+  outline: none;
+  border: 1px solid #f20057;
+  cursor: pointer;
+  font-weight: lighter;
+}
+
+.video-spotlight-info button:hover {
+  background: #f20057;
+}
+
+.video-spotlight-selector {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-spotlight-selector div {
+  width: 30px;
+  height: 10px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.video-spotlight-selector div.active {
+  background: #404040;
+}
+
+@media only screen and (max-width: 900px) {
+  
+  .video-spotlight-background {
+    height: 700px;
+  }
+
+  .video-spotlight-info-summary {
+    display: none;
+  }
+
+  .video-spotlight-info {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  .video-spotlight-selector div {
+    margin: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 690px) {
+
+  .video-spotlight-background {
+    height: 400px;
+    background-size: cover;
+  }
+
+  .video-spotlight-info button {
+    margin: 0;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+}
+
+@media only screen and (max-width: 350px) {
+
+  .video-spotlight-info {
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  .video-spotlight-info button {
+    height: 40px;
+    width: 100px;
+    font-size: 90%;
+    margin-top: 10px;
+  }
+
+}
+
+@media only screen and (max-height: 800px) {
+
+}

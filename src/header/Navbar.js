@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Search from "./Search";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="logo">
+    <nav className="navbar">
+      <div className="navbar-logo">
         <Link to="/">
-          <img className="logo-image" src="/images/logo.png" alt="TéléNÉ" />
+          <img className="navbar-logo-image" src="/images/logo.png" alt="TéléNÉ" />
         </Link>
       </div>
-      <div className="search-bar">
+      <div className="navbar-search">
         <Search />
       </div>
       <div style={{ clear: "both" }} />

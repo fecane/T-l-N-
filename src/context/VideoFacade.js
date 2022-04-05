@@ -2,12 +2,28 @@ export default class VideoFacade {
   constructor(data) {
     this.data = data;
     this.videos = new Map();
+    this.categories = new Map();
+    data["catégories"].forEach((c) => {
+      if (this.categories.has(c.id)) {
+        console.warn(`Attention: Le catégorie "${c.id}" est dupliquer.`);
+      }
+      this.categories.set(c.id, c);
+    });
     data.videos.forEach((f) => {
       if (this.videos.has(f.id)) {
-        console.log(`Attention: Le video "${f.id}" est dupliquer.`);
+        console.warn(`Attention: Le video "${f.id}" est dupliquer.`);
       }
       this.videos.set(f.id, f);
     });
+  }
+
+  toCategory(category) {
+    return {
+      id: category.id,
+      title: category.titre,
+      backgroundImage: category.imageFond,
+      backgroundColor: category.couleurFond ?? "#b30041",
+    }
   }
 
   toVideo(video) {
@@ -26,8 +42,16 @@ export default class VideoFacade {
     };
   }
 
+  getCategory(id) {
+    const category = this.categories.get(id);
+    if (!category) {
+      return undefined;
+    }
+    return this.toCategory(category);
+  }
+
   getCategories() {
-    return this.data["catégories"].map((f) => this.toVideo(f));
+    return this.data["catégories"].map((c) => this.toCategory(c));
   }
 
   getVideo(id) {
@@ -43,7 +67,6 @@ export default class VideoFacade {
       .filter((f) => f["catégories"].indexOf(id) > -1)
       .map((f) => this.toVideo(f));
     result.sort((a, b) => (a.date < b.date ? 1 : -1));
-    console.log(result);
     return result;
   }
 

@@ -1,0 +1,40 @@
+.footer {
+  height: 80px;
+  margin-top: 50px;
+  padding: 20px 20px 50px;
+  background: black;
+  color: white;
+  border-top: 1px solid #f20057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer-logo-fecane {
+  height: 40px;
+}
+
+.footer-logo-canada {
+  height: 25px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  
+}
+
+@media only screen and (max-width: 690px) {
+  
+}
+
+@media only screen and (max-width: 450px) {
+}
+
+@media only screen and (max-width: 350px) {
+
+}
+
+@media only screen and (max-height: 800px) {
+  
+}

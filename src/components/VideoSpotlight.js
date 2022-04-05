@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { useVideoSpotlight } from "../context/VideoContext";
 import { toFormatDate } from "../utils/format_date";
+import "./VideoSpotlight.css";
 
 const VideoSpotlight = () => {
   const videos = useVideoSpotlight();
@@ -42,27 +43,27 @@ const VideoSpotlight = () => {
       backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.8) 40%, ${videos[current].backgroundColor})`,
     };
     return (
-      <div key={videos[current].id}>
+      <div className="video-spotlight" key={videos[current].id}>
         <Animate to="1" from="0.2" attributeName="opacity">
           <div
             style={
               videos[current].backgroundImage ? backgroundImg : backgroundColor
             }
-            className="bgImage"
+            className="video-spotlight-background"
           >
-            <div className="popularInfo">
-              <h1>{videos[current].title}</h1>
-              <p className="release-date">
+            <div className="video-spotlight-info">
+              <h1 className="video-spotlight-title">{videos[current].title}</h1>
+              <p className="video-spotlight-info-date">
                 Date : {toFormatDate(videos[current].date)}
               </p>
-              <ReactMarkdown className="header-overview">
+              <ReactMarkdown className="video-spotlight-info-summary">
                 {videos[current].summary ?? videos[current].description}
               </ReactMarkdown>
               <Link to={`/videos/${videos[current].id}`}>
                 <button>Visionner</button>
               </Link>
             </div>
-            <div className="switchImg">
+            <div className="video-spotlight-selector">
               {videos.map((movie, index) => (
                 <div
                   key={index}

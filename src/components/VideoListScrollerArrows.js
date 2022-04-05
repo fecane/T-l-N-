@@ -12,7 +12,7 @@ function VideoListScrollerArrow({
 }) {
   return (
     <button
-      className="video-list-scroller-menu-arrow"
+      className="video-list-scroller-component-menu-arrow"
       disabled={disabled}
       onClick={onClick}
       style={{
@@ -42,11 +42,9 @@ export function LeftVideoListScrollerArrow() {
     !initComplete || (initComplete && isFirstItemVisible)
   );
   React.useEffect(() => {
-    // console.log('left', visibleItemsWithoutSeparators.length,isFirstItemVisible )
-    // NOTE: detect if whole component visible
-    // if (visibleItemsWithoutSeparators.length) {
-    setDisabled(isFirstItemVisible);
-    // }
+    if (visibleItemsWithoutSeparators.length) {
+      setDisabled(isFirstItemVisible);
+    }
   }, [isFirstItemVisible, visibleItemsWithoutSeparators]);
 
   return (
@@ -64,10 +62,9 @@ export function RightVideoListScrollerArrow() {
     !visibleItemsWithoutSeparators.length && isLastItemVisible
   );
   React.useEffect(() => {
-    // console.log('right', visibleItemsWithoutSeparators.length,isLastItemVisible )
-    // if (visibleItemsWithoutSeparators.length) {
-    setDisabled(isLastItemVisible);
-    // }
+    if (visibleItemsWithoutSeparators.length) {
+      setDisabled(isLastItemVisible);
+    }
   }, [isLastItemVisible, visibleItemsWithoutSeparators]);
 
   return (

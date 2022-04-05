@@ -1,0 +1,64 @@
+.navbar {
+  background: black;
+  color: #f20057;
+  height: 80px;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+  float: left;
+  font-size: 30px;
+}
+
+.navbar-logo a {
+  color: #f20057;
+  text-decoration: none;
+}
+
+.navbar-logo a:hover {
+  color: #f20057;
+}
+
+.navbar-logo-image {
+  height: 45px;
+}
+
+.navbar-search {
+  float: right;
+}
+
+
+@media only screen and (max-width: 900px) {
+  
+}
+
+@media only screen and (max-width: 690px) {
+
+  .navbar {
+    height: 130px;
+  }
+  
+  .navbar-logo,
+  .navbar-search {
+    float: none;
+  }
+
+  .navbar-logo {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+}
+
+@media only screen and (max-width: 350px) {
+
+}
+
+@media only screen and (max-height: 800px) {
+  
+}

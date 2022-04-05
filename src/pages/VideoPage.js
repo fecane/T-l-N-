@@ -6,17 +6,14 @@ import { useVideo } from "../context/VideoContext";
 const VideoPage = () => {
   const { videoID } = useParams();
   const video = useVideo(videoID);
-  console.log(videoID);
-  const render = () => {
-    if (video) {
-      return <VideoPlayer video={video} />;
-    }
-    return "loading";
-  };
+
+  if (!video) {
+    return null;
+  }
 
   return (
     <div>
-      <div className="video-page">{render()}</div>
+      <div className="video-page"><VideoPlayer video={video} /></div>
     </div>
   );
 };

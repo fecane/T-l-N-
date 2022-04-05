@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./VideoCard.css";
 
-const VideoCard = ({ video }) => {
+const VideoCard = ({ video, isAnimate }) => {
   const [isHovering, setIsHovering] = useState(false);
 
   const handleEnter = () => {
@@ -12,10 +13,14 @@ const VideoCard = ({ video }) => {
     setIsHovering(false);
   };
 
+  const cardAnimateState = isAnimate ? 'animate' : '';
+  const cardHoverState = isHovering ? 'hover' : '';
+  const titleVisibleState = isHovering || !video.image ? 'visible' : '';
+
   return (
     <Link to={`/videos/${video.id}`}>
       <div
-        className="video-card"
+        className={`video-card ${cardHoverState} ${cardAnimateState}`}
         onMouseEnter={handleEnter}
         onMouseLeave={handleLeave}
       >
@@ -26,18 +31,15 @@ const VideoCard = ({ video }) => {
               src={video.image}
               alt={video.title}
             />
-            <h3 className="video-title">{video.title}</h3>
           </div>
         ) : (
           <div
             className="video-card-image"
             style={{ backgroundColor: video.backgroundColor }}
           >
-            <h3 className="video-title visible">{video.title}</h3>
           </div>
         )}
-
-        {isHovering && <h3 className="video-title">{video.title}</h3>}
+        <h3 className={`video-card-title ${titleVisibleState}`}>{video.title}</h3>
       </div>
     </Link>
   );

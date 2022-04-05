@@ -1,14 +1,48 @@
 {
   "catégories": [
     {
-      "id": "nouveau",
-      "titre": "Nouveau",
-      "imageFond": "https://link.com/to/image.jpg"
+      "id": "en-vedette",
+      "titre": "En vedette"
     },
     {
-      "id": "populaire",
-      "titre": "Populaire",
-      "couleurFond": "#ebd534"
+      "id": "nouveau",
+      "titre": "Nouveau"
+    },
+    {
+      "id": "musique",
+      "titre": "Musique"
+    },
+    {
+      "id": "danse",
+      "titre": "Danse"
+    },
+    {
+      "id": "film-theatre",
+      "titre": "Film et théâtre"
+    },
+    {
+      "id": "arts-visuels",
+      "titre": "Arts visuels"
+    },
+    {
+      "id": "cuisine",
+      "titre": "Cuisine"
+    },
+    {
+      "id": "aine",
+      "titre": "Aîné"
+    },
+    {
+      "id": "jeunesse",
+      "titre": "Jeunesse"
+    },
+    {
+      "id": "documentaire",
+      "titre": "Documentaire"
+    },
+    {
+      "id": "variete",
+      "titre": "Variété"
     }
   ],
   "videos": [
@@ -20,7 +54,7 @@
       "description": "Le premier album de Sluice, Le succès par le travail, est disponible via Acadian Embassy.",
       "date": "2021-05-13",
       "couleurFond": "purple",
-      "catégories": ["nouveau"]
+      "catégories": ["nouveau", "en-vedette", "musique"]
     },
     {
       "id": "akffdr0u-iY",
@@ -30,7 +64,7 @@
       "date": "2020-08-21",
       "imageFond": "/data/akffdr0u-iY.jpg",
       "image": "/data/akffdr0u-iY.jpg",
-      "catégories": ["nouveau", "populaire"]
+      "catégories": ["nouveau", "musique"]
     },
     {
       "id": "l60CJ8VVDa8",
@@ -49,7 +83,7 @@
       "description": "Vidéo officielle pour Allons-y par Michelle Deveau.",
       "date": "1999-08-21",
       "imageFond": "/data/akffdr0u-iY.jpg",
-      "catégories": ["nouveau", "populaire"]
+      "catégories": ["nouveau", "musique"]
     },
     {
       "id": "W2PornwWUlA2",
@@ -67,7 +101,7 @@
       "description": "Vidéo officielle pour Allons-y par Michelle Deveau.",
       "date": "1999-08-21",
       "imageFond": "/data/akffdr0u-iY.jpg",
-      "catégories": ["nouveau", "populaire"]
+      "catégories": ["nouveau", "musique"]
     }
   ],
   "grandTitres": ["l60CJ8VVDa8", "W2PornwWUlA", "akffdr0u-iY"]

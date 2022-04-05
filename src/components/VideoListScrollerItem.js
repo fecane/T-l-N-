@@ -3,8 +3,8 @@ import VideoCard from "./VideoCard.js";
 
 const VideoListScrollerItem = ({ video, itemId }) => {
   return (
-    <div className="video-list-scroller-item">
-      <VideoCard key={video.id} video={video} />
+    <div className="video-list-scroller-component-item">
+      <VideoCard key={video.id} video={video} isAnimate={true} />
     </div>
   );
 };
