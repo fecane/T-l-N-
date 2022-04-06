@@ -1,4 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
+import { parse } from "yaml";
 import VideoFacade from "./VideoFacade";
 
 const VideoContext = createContext();
@@ -45,7 +46,7 @@ function useVideoSearch(query, cb) {
     }
     const results = context.search(query);
     cb(results);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [context, query]);
 }
 
@@ -59,17 +60,36 @@ function useVideoSpotlight() {
 
 function VideoContextProvider({ children }) {
   const [videoFacade, setVideoFacade] = useState(undefined);
+  const [loadingError, setLoadingError] = useState(undefined);
 
-  const render = () => ({ ...children });
+  const render = () => {
+    if (loadingError || (videoFacade && videoFacade.errors.length > 0)) {
+      return (
+        <div>
+          <p>Attention: Il exist des problems avec "videos.yaml":</p>
+          {loadingError ? <pre>{loadingError.message}</pre> : null}
+          {videoFacade ? (
+            <ul>
+              {videoFacade.errors.map((error, index) => (
+                <li key={index}>{error}</li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
+      );
+    }
+    return { ...children };
+  };
 
   useEffect(() => {
-    const url = fetch(`/data/videos.json?ts=${new Date().getTime()}`);
+    const url = fetch(`/data/videos.yaml?ts=${new Date().getTime()}`);
     url
-      .then((req) => req.json())
+      .then((req) => req.text())
       .then((data) => {
-        setVideoFacade(new VideoFacade(data));
+        const json = parse(data);
+        setVideoFacade(new VideoFacade(json));
       })
-      .catch((err) => console.error(err));
+      .catch((err) => setLoadingError(err));
   }, []);
 
   return (

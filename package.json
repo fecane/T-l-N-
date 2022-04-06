@@ -12,7 +12,8 @@
     "react-responsive-modal": "^6.2.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
-    "react-smooth": "^2.0.0"
+    "react-smooth": "^2.0.0",
+    "yaml": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

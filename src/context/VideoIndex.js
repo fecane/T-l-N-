@@ -11,14 +11,18 @@ class VideoIndex {
     this.idx = lunr(function () {
       const idx = this;
       idx.use(lunr.fr);
-      idx.ref('id');
+      idx.ref("id");
       idx.field("title");
+      idx.field("creator");
       idx.field("body");
-      docs.forEach((doc) => idx.add({
-        id: doc.id,
-        title: removeDiacritics(doc.title),
-        body: removeDiacritics(doc.body),
-      }));
+      docs.forEach((doc) =>
+        idx.add({
+          id: doc.id,
+          title: removeDiacritics(doc.title),
+          body: removeDiacritics(doc.body),
+          creator: removeDiacritics(doc.creator),
+        })
+      );
     });
   }
 

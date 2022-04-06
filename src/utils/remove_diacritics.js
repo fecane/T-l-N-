@@ -12,9 +12,10 @@ const accentsMap = new Map([
   ["C", "Ç"],
   ["c", "ç"],
   ["N", "Ñ"],
-  ["n", "ñ"]
+  ["n", "ñ"],
 ]);
 
-const reducer = (acc, [key]) => acc.replace(new RegExp(accentsMap.get(key), "g"), key);
+const reducer = (acc, [key]) =>
+  acc.replace(new RegExp(accentsMap.get(key), "g"), key);
 
 export const removeDiacritics = (text) => [...accentsMap].reduce(reducer, text);
