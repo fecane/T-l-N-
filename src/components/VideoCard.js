@@ -13,9 +13,9 @@ const VideoCard = ({ video, isAnimate }) => {
     setIsHovering(false);
   };
 
-  const cardAnimateState = isAnimate ? 'animate' : '';
-  const cardHoverState = isHovering ? 'hover' : '';
-  const titleVisibleState = isHovering || !video.image ? 'visible' : '';
+  const cardAnimateState = isAnimate ? "animate" : "";
+  const cardHoverState = isHovering ? "hover" : "";
+  const titleVisibleState = isHovering || !video.image ? "visible" : "";
 
   return (
     <Link to={`/videos/${video.id}`}>
@@ -36,10 +36,11 @@ const VideoCard = ({ video, isAnimate }) => {
           <div
             className="video-card-image"
             style={{ backgroundColor: video.backgroundColor }}
-          >
-          </div>
+          ></div>
         )}
-        <h3 className={`video-card-title ${titleVisibleState}`}>{video.title}</h3>
+        <h3 className={`video-card-title ${titleVisibleState}`}>
+          {video.title}
+        </h3>
       </div>
     </Link>
   );

@@ -15,11 +15,16 @@ const VideoListScroller = ({ id, heading }) => {
   if (videos.length < 1) {
     return null;
   }
-  
+
   return (
     <div className="video-list-scroller">
       <h2 className="video-list-scroller-category-title">
-        <Link className="video-list-scroller-category-link" to={`/categories/${id}`}>{heading}</Link>
+        <Link
+          className="video-list-scroller-category-link"
+          to={`/categories/${id}`}
+        >
+          {heading}
+        </Link>
       </h2>
 
       <ScrollMenu

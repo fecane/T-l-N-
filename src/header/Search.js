@@ -1,76 +1,51 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useVideoSearch } from "../context/VideoContext";
+import "./Search.css";
 
-class Search extends Component {
-  constructor(props) {
-    super(props);
-    this.mounted = false;
-  }
-  state = {
-    val: "",
-    searchVal: [],
-    showRes: false,
+const Search = () => {
+  const [query, setQuery] = useState("");
+  const [results, setResults] = useState([]);
+
+  useVideoSearch(query, (search) => {
+    setResults(search.slice(0, 20));
+  });
+
+  const handleChange = (event) => {
+    setQuery(event.target.value);
   };
 
-  componentDidMount() {
-    this.mounted = true;
-  }
-
-  handleChange = (e) => {
-    this.setState({ val: e.target.value });
-    if (e.target.value !== "")
-      fetch(`
-    https://api.themoviedb.org/3/search/movie?api_key=17117ab9c18276d48d8634390c025df4&language=en-US&query=${e.target.value}&page=1&include_adult=false`)
-        .then((r) => r.json())
-        .then((data) => {
-          if (this.mounted)
-            this.setState({ searchVal: data.results, showRes: true });
-        })
-        .catch((err) => console.log(err));
-    else if (e.target.value === "") this.setState({ showRes: false });
+  const handleResultClick = () => {
+    setQuery("");
   };
 
-  closeRes = () => {
-    this.setState({ showRes: false });
-  };
-
-  componentWillUnmount() {
-    this.mounted = false;
-  }
-
-  render() {
-    const { val, searchVal, showRes } = this.state;
-
-    const moviesList = searchVal.length
-      ? searchVal.map((movie) => {
-          return (
-            <li key={movie.id}>
-              <Link to={"/" + movie.id} onClick={this.closeRes}>
-                {movie.title}
-              </Link>
-            </li>
-          );
-        })
-      : null;
-
+  const videos = results.map((v) => {
     return (
-      <React.Fragment>
-        <input
-          type="text"
-          name="searchVal"
-          onChange={this.handleChange}
-          className="search-input"
-          placeholder="Rechercher…"
-          value={val}
-        />
-        {showRes && (
-          <div className="search-values">
-            <ul>{moviesList}</ul>
-          </div>
-        )}
-      </React.Fragment>
+      <li key={v.id}>
+        <Link to={`/videos/${v.id}`} onClick={handleResultClick}>
+          {v.title}
+        </Link>
+      </li>
     );
-  }
-}
+  });
+
+  return (
+    <React.Fragment>
+      <input
+        type="text"
+        name="search-query"
+        onChange={handleChange}
+        className="search-query-field"
+        placeholder="Rechercher…"
+        value={query}
+      />
+      {results.length > 0 && (
+        <div className="search-results">
+          <ul>{videos}</ul>
+        </div>
+      )}
+    </React.Fragment>
+  );
+};
 
 export default Search;

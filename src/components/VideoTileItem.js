@@ -34,11 +34,14 @@ const VideoTitleItem = ({ video }) => {
         style={video.image ? backgroundImg : backgroundColor}
       >
         <div className="video-tiles-item-title-container">
-            <h3 className={`video-tiles-item-title-text ${titleVisibleState}`}>
-          <Link className="video-tiles-item-title-link" to={`/videos/${video.id}`}>
+          <h3 className={`video-tiles-item-title-text ${titleVisibleState}`}>
+            <Link
+              className="video-tiles-item-title-link"
+              to={`/videos/${video.id}`}
+            >
               {video.title}
-          </Link>
-            </h3>
+            </Link>
+          </h3>
         </div>
       </div>
     </div>

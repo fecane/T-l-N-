@@ -13,7 +13,9 @@ const VideoPage = () => {
 
   return (
     <div>
-      <div className="video-page"><VideoPlayer video={video} /></div>
+      <div className="video-page">
+        <VideoPlayer video={video} />
+      </div>
     </div>
   );
 };

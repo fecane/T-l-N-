@@ -1,4 +1,6 @@
-export default class VideoFacade {
+import VideoIndex from "./VideoIndex";
+
+class VideoFacade {
   constructor(data) {
     this.data = data;
     this.videos = new Map();
@@ -15,6 +17,13 @@ export default class VideoFacade {
       }
       this.videos.set(f.id, f);
     });
+    this.idx = new VideoIndex(
+      this.data.videos.map((v) => ({
+        id: v.id,
+        title: v.titre,
+        body: v.description,
+      }))
+    );
   }
 
   toCategory(category) {
@@ -23,7 +32,7 @@ export default class VideoFacade {
       title: category.titre,
       backgroundImage: category.imageFond,
       backgroundColor: category.couleurFond ?? "#b30041",
-    }
+    };
   }
 
   toVideo(video) {
@@ -40,6 +49,16 @@ export default class VideoFacade {
       backgroundColor: video.couleurFond ?? "#b30041",
       categories: video["catégories"],
     };
+  }
+
+  search(query) {
+    const result = this.idx.search(query).map((r) => ({
+      id: r.ref,
+      title: this.videos.get(r.ref).titre,
+      date: r.date,
+    }));
+    result.sort((a, b) => (a.date < b.date ? 1 : -1));
+    return result;
   }
 
   getCategory(id) {
@@ -82,3 +101,5 @@ export default class VideoFacade {
       .filter((f) => !!f);
   }
 }
+
+export default VideoFacade;

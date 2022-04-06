@@ -62,7 +62,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-  
   .video-spotlight-background {
     height: 700px;
   }
@@ -83,11 +82,9 @@
   .video-spotlight-selector div {
     margin: 10px;
   }
-
 }
 
 @media only screen and (max-width: 690px) {
-
   .video-spotlight-background {
     height: 400px;
     background-size: cover;
@@ -96,14 +93,12 @@
   .video-spotlight-info button {
     margin: 0;
   }
-
 }
 
 @media only screen and (max-width: 450px) {
 }
 
 @media only screen and (max-width: 350px) {
-
   .video-spotlight-info {
     text-align: center;
     top: 40%;
@@ -119,9 +114,7 @@
     font-size: 90%;
     margin-top: 10px;
   }
-
 }
 
 @media only screen and (max-height: 800px) {
-
 }

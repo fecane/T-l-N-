@@ -35,6 +35,20 @@ function useVideosByCategory(id) {
   return context.getVideosByCategory(id);
 }
 
+function useVideoSearch(query, cb) {
+  const context = React.useContext(VideoContext);
+
+  useEffect(() => {
+    if (!context || query.trim().length < 3) {
+      cb([]);
+      return;
+    }
+    const results = context.search(query);
+    cb(results);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [context, query]);
+}
+
 function useVideoSpotlight() {
   const context = React.useContext(VideoContext);
   if (!context) {
@@ -55,7 +69,7 @@ function VideoContextProvider({ children }) {
       .then((data) => {
         setVideoFacade(new VideoFacade(data));
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.error(err));
   }, []);
 
   return (
@@ -71,5 +85,6 @@ export {
   useVideoCategory,
   useVideoCategories,
   useVideosByCategory,
+  useVideoSearch,
   useVideoSpotlight,
 };

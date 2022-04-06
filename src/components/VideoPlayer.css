@@ -44,7 +44,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-
   .video-player-background {
     height: 100vh;
   }
@@ -57,29 +56,22 @@
   .video-player-title {
     margin: 30px 0;
   }
-
 }
 
 @media only screen and (max-width: 690px) {
-
 }
 
 @media only screen and (max-width: 450px) {
-  
 }
 
 @media only screen and (max-width: 350px) {
-
   .video-player-background {
     height: 100%;
   }
-
 }
 
 @media only screen and (max-height: 800px) {
-  
   .video-player-background {
     height: 100%;
   }
-
 }

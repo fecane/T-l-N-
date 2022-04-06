@@ -55,9 +55,7 @@
   cursor: default !important;
 }
 
-
 @media only screen and (max-width: 900px) {
-
   .video-list-scroller {
     margin: 0;
   }
@@ -75,7 +73,6 @@
 }
 
 @media only screen and (max-width: 690px) {
-
   .video-list-scroller-category-title {
     padding-left: 38px;
     font-size: 20px;
@@ -84,20 +81,16 @@
   .video-list-scroller-component-item {
     height: 120px;
   }
-
 }
 
 @media only screen and (max-width: 450px) {
 }
 
 @media only screen and (max-width: 350px) {
-
   .video-list-scroller-component-item {
     height: 110px;
   }
-
 }
 
 @media only screen and (max-height: 800px) {
-  
 }
