@@ -1,93 +1,93 @@
 ---
 # Les catégories commence ici.
 catégories:
-- id: en-vedette
-  titre: En vedette
+  - id: en-vedette
+    titre: En vedette
 
-- id: nouveau
-  titre: Nouveau
+  - id: nouveau
+    titre: Nouveau
 
-- id: musique
-  titre: Musique
+  - id: musique
+    titre: Musique
 
-- id: danse
-  titre: Danse
+  - id: danse
+    titre: Danse
 
-- id: film-theatre
-  titre: Film et théâtre
+  - id: film-theatre
+    titre: Film et théâtre
 
-- id: arts-visuels
-  titre: Arts visuels
+  - id: arts-visuels
+    titre: Arts visuels
 
-- id: cuisine
-  titre: Cuisine
+  - id: cuisine
+    titre: Cuisine
 
-- id: aine
-  titre: Aîné
+  - id: aine
+    titre: Aîné
 
-- id: jeunesse
-  titre: Jeunesse
+  - id: jeunesse
+    titre: Jeunesse
 
-- id: documentaire
-  titre: Documentaire
+  - id: documentaire
+    titre: Documentaire
 
-- id: variete
-  titre: Variété
+  - id: variete
+    titre: Variété
 
 # Les vidéos commence ici.
 vidéos:
-- id: W2PornwWUlA
-  titre: Électrique
-  créateur: Sluice
-  date: '2021-05-13'
-  # Couleur de fond peut être une couleur hexadecimal (il faut un "#" suivant) ou HTML.
-  couleurFond: '#690971' 
-  catégories:
-  - nouveau
-  - en-vedette
-  - musique
-  sommaire: |-
-    Voici est un exemple d'un texte pour le grande titre (optionnelle).
-  description: |-
-    Voici est in exemple d'un texte pour le description d'une vidéo. Vous pouvez utilizer *Markdown* texte ici
-    pour controller le format de texte.
-    
-    Vocie une autre ligne.
+  - id: W2PornwWUlA
+    titre: Électrique
+    créateur: Sluice
+    date: "2021-05-13"
+    # Couleur de fond peut être une couleur hexadecimal (il faut un "#" suivant) ou HTML.
+    couleurFond: "#690971"
+    catégories:
+      - nouveau
+      - en-vedette
+      - musique
+    sommaire: |-
+      Voici est un exemple d'un texte pour le grande titre (optionnelle).
+    description: |-
+      Voici est in exemple d'un texte pour le description d'une vidéo. Vous pouvez utilizer *Markdown* texte ici
+      pour controller le format de texte.
 
-- id: akffdr0u-iY
-  titre: Allons-y
-  créateur: Michelle Deveau
-  date: '2020-08-21'
-  # Image de fond est pour les grandes titres et la page de vidéo.
-  imageFond: "/data/images/akffdr0u-iY.jpg"
-  # Image est pour les listes des vidéos.
-  image: "/data/images/akffdr0u-iY.jpg"
-  catégories:
-  - nouveau
-  - musique
-  description: |-
-    Voici est in exemple d'un texte pour le description d'une vidéo. Vous pouvez utilizer *Markdown* texte ici
-    pour controller le format de texte.
-    
-    Vocie une autre ligne.
+      Vocie une autre ligne.
 
-- id: l60CJ8VVDa8
-  titre: Savez-vous comment?
-  créateur: Société acadienne de Clare
-  date: '2022-03-24'
-  couleurFond: 'darkblue'
-  # "liste" est une optionnelle YouTube playlist identifier.
-  liste: PL2-1Yu_NhspShOYMB8PKJAROaZA4RP_OX
-  catégories:
-  - nouveau
-  description: |-
-    Voici est in exemple d'un texte pour le description d'une vidéo. Vous pouvez utilizer *Markdown* texte ici
-    pour controller le format de texte.
-    
-    Vocie une autre ligne.
+  - id: akffdr0u-iY
+    titre: Allons-y
+    créateur: Michelle Deveau
+    date: "2020-08-21"
+    # Image de fond est pour les grandes titres et la page de vidéo.
+    imageFond: "/data/images/akffdr0u-iY.jpg"
+    # Image est pour les listes des vidéos.
+    image: "/data/images/akffdr0u-iY.jpg"
+    catégories:
+      - nouveau
+      - musique
+    description: |-
+      Voici est in exemple d'un texte pour le description d'une vidéo. Vous pouvez utilizer *Markdown* texte ici
+      pour controller le format de texte.
+
+      Vocie une autre ligne.
+
+  - id: l60CJ8VVDa8
+    titre: Savez-vous comment?
+    créateur: Société acadienne de Clare
+    date: "2022-03-24"
+    couleurFond: "darkblue"
+    # "liste" est une optionnelle YouTube playlist identifier.
+    liste: PL2-1Yu_NhspShOYMB8PKJAROaZA4RP_OX
+    catégories:
+      - nouveau
+    description: |-
+      Voici est in exemple d'un texte pour le description d'une vidéo. Vous pouvez utilizer *Markdown* texte ici
+      pour controller le format de texte.
+
+      Vocie une autre ligne.
 
 # Les grandes titres commence ici.
 grandesTitres:
-- l60CJ8VVDa8
-- W2PornwWUlA
-- akffdr0u-iY
+  - l60CJ8VVDa8
+  - W2PornwWUlA
+  - akffdr0u-iY

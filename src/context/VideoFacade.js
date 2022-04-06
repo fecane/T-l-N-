@@ -13,7 +13,7 @@ class VideoFacade {
 
     // Validate and build out the lookups
     this.errors = [];
-    data['catégories'].forEach((c) => {
+    data["catégories"].forEach((c) => {
       this._validateCategory(c);
       if (this.categories.has(c.id)) {
         this._addError(`La catégorie "${c.id}" ("id") est dupliquer.`);
@@ -21,7 +21,7 @@ class VideoFacade {
       }
       this.categories.set(c.id, c);
     });
-    data['vidéos'].forEach((v) => {
+    data["vidéos"].forEach((v) => {
       this._validateVideo(v);
       if (this.videos.has(v.id)) {
         this._addError(`La video "${v.id}" ("id") est dupliquer.`);
@@ -29,15 +29,15 @@ class VideoFacade {
       }
       this.videos.set(v.id, v);
     });
-    data.grandesTitres.forEach(g => {
+    data.grandesTitres.forEach((g) => {
       if (!this.videos.has(g)) {
         this._addError(`La video "${g}" pour les grand titres n'exist pas.`);
       }
-    })
+    });
 
     // Build the search index
     this.idx = new VideoIndex(
-      this.data['vidéos'].map((v) => ({
+      this.data["vidéos"].map((v) => ({
         id: v.id,
         title: v.titre,
         creator: v["créateur"],
@@ -54,7 +54,7 @@ class VideoFacade {
     if (
       !validateRequired({
         target: category,
-        prop: 'id',
+        prop: "id",
         errors: this.errors,
         msg: 'La propriété "id" est requise pour tous les catégories.',
       })
@@ -63,13 +63,13 @@ class VideoFacade {
     }
     validateIdentifier({
       target: category,
-      prop: 'id',
+      prop: "id",
       errors: this.errors,
       msg: `La propriété "id" pour catégorie "${category.id}" est invalid (0-9, a-z, A-Z, "-", etc "_")`,
     });
     validateRequired({
       target: category,
-      prop: 'titre',
+      prop: "titre",
       errors: this.errors,
       msg: `La propriété "titre" pour catégorie "${category.id}" est requise.`,
     });
@@ -79,7 +79,7 @@ class VideoFacade {
     if (
       !validateRequired({
         target: video,
-        prop: 'id',
+        prop: "id",
         errors: this.errors,
         msg: 'La propriété "id" est requise pour tous les vidéos.',
       })
@@ -88,43 +88,45 @@ class VideoFacade {
     }
     validateIdentifier({
       target: video,
-      prop: 'id',
+      prop: "id",
       errors: this.errors,
       msg: `La propriété "id" pour vidéo "${video.id}" est invalid (0-9, a-z, A-Z, "-", etc "_")`,
     });
     validateRequired({
       target: video,
-      prop: 'titre',
+      prop: "titre",
       errors: this.errors,
       msg: `La propriété "titre" pour vidéo "${video.id}" est requise.`,
     });
     validateRequired({
       target: video,
-      prop: 'créateur',
+      prop: "créateur",
       errors: this.errors,
       msg: `La propriété "créateur" pour vidéo "${video.id}" est requise.`,
     });
     validateRequired({
       target: video,
-      prop: 'description',
+      prop: "description",
       errors: this.errors,
       msg: `La propriété "description" pour vidéo "${video.id}" est requise.`,
     });
     validateDate({
       target: video,
-      prop: 'date',
+      prop: "date",
       errors: this.errors,
       msg: `La propriété "date" pour vidéo "${video.id}" est invalid (YYYY-MM-DD).`,
     });
     validateRequired({
       target: video,
-      prop: 'catégories',
+      prop: "catégories",
       errors: this.errors,
       msg: `La propriété "catégories" pour vidéo "${video.id}" est requise.`,
     });
-    video['catégories'].forEach(c => {
+    video["catégories"].forEach((c) => {
       if (!this.categories.has(c)) {
-        this._addError(`La vidéo "${video.id}" a une catégorie qui n'exist pas ("${c}").`);
+        this._addError(
+          `La vidéo "${video.id}" a une catégorie qui n'exist pas ("${c}").`
+        );
       }
     });
   }
@@ -185,7 +187,7 @@ class VideoFacade {
   }
 
   getVideosByCategory(id) {
-    const result = this.data['vidéos']
+    const result = this.data["vidéos"]
       .filter((f) => f["catégories"].indexOf(id) > -1)
       .map((f) => this.toVideo(f));
     result.sort((a, b) => (a.date < b.date ? 1 : -1));
