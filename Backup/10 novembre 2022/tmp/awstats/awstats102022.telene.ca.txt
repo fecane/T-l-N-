@@ -1,0 +1,433 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202210 will be lost/reset.
+# Last config file used to build this data file was /home/telen783/tmp/awstats/awstats.telene.ca.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2006                
+POS_TIME 2679                
+POS_VISITOR 9687                
+POS_DAY 10283               
+POS_DOMAIN 3344                
+POS_LOGIN 3601                
+POS_ROBOT 3756                
+POS_WORMS 4296                
+POS_EMAILSENDER 4427                
+POS_EMAILRECEIVER 4570                
+POS_SESSION 10969               
+POS_SIDER 11159               
+POS_FILETYPES 4705                
+POS_DOWNLOADS 4894                
+POS_OS 4942                
+POS_BROWSER 5393                
+POS_SCREENSIZE 6858                
+POS_UNKNOWNREFERER 6932                
+POS_UNKNOWNREFERERBROWSER 7107                
+POS_ORIGIN 7277                
+POS_SEREFERRALS 7413                
+POS_PAGEREFS 7557                
+POS_SEARCHWORDS 7837                
+POS_KEYWORDS 7989                
+POS_MISC 2341                
+POS_ERRORS 8048                
+POS_CLUSTER 3457                
+POS_SIDER_404 8172                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20221101160025 1 0 5405342097681
+FirstTime 20221004225852
+LastTime 20221031162030
+LastUpdate 20221102082029 1 0 0 0 0
+TotalVisits 65                  
+TotalUnique 13                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 13                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+RealPlayerSupport 0 0 0
+AddToFavourites 0 114 0
+TotalMisc 0 0 0
+FlashSupport 0 0 0
+QuickTimeSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+JavascriptDisabled 0 0 0
+JavaEnabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 0 0 0 0 0 0
+2 1 1 739 1 2 29112
+3 0 0 0 1 2 29112
+4 2 2 1478 0 1 10070
+5 0 0 0 2 5 580327
+6 1 1 739 0 0 0
+7 3 8 680821 0 1 28373
+8 10 24 1461262 6 14 1255849
+9 2 3 560486 0 0 0
+10 2 2 1478 6 13 637741
+11 1 3 9520 3 4 40311
+12 4 4 2956 3 5 578129
+13 12 25 3739870 56 105 7838672
+14 34 67 7686097 102 211 18418775
+15 25 46 5370777 76 152 13538963
+16 7 14 1616968 15 33 3004959
+17 4 4 2956 2 4 570542
+18 1 1 739 1 2 10798
+19 1 1 739 1 1 739
+20 4 4 2956 2 9 81206
+21 1 1 739 0 3 30168
+22 8 8 2956 1 1 739
+23 1 1 739 1 2 20140
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 3
+us 99 195 21129496
+ca 20 20 11824
+de 5 5 3695
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 9
+Go\-http\-client/ 208 27863888 20221031162054 0
+AdsBot\-Google\-Mobile\-Apps 35 6940179 20221031162031 0
+Mediapartners-Google 29 2693270 20221030155840 0
+Googlebot/ 28 3943043 20221031142053 0
+DuckDuckGo\-Favicons\-Bot/ 3 2217 20221028160741 0
+(firefox/)([0-9]\.|[0-1][0]\.) 3 526497 20221028154003 0
+AhrefsBot/ 2 1478 20221012204743 0
+Googlebot\-Image/ 2 64044 20221011141109 0
+crawl 1 739 20221014103202 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 7
+yaml 6 201202 0 0
+svg 2 11234 0 0
+css 39 347854 0 0
+html 79 56164 0 0
+json 39 11628 0 0
+js 38 19983424 0 0
+png 17 533509 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 28
+win16 1 1
+macosx9 1 1
+macosx 8 6
+win2000 2 1
+Unknown 40 23
+androidlollipop 4 2
+win10 22 22
+winlong 7 1
+winxp 7 3
+macosx10 1 1
+androidmarshmallow 6 3
+androidpie 1 1
+linuxubuntu 3 2
+unix 2 2
+ios_iphone 6 3
+macosx15 29 8
+macosx8 1 1
+androidoreo 1 1
+androidics 2 0
+linuxdebian 2 1
+linuxgentoo 5 4
+win95 1 0
+winnt 11 3
+androidnougat 5 3
+win7 8 7
+winunknown 11 6
+linuxcentos 3 3
+linux 30 15
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 80
+chrome106.0.0.0 8 3
+chrome86.0.4240.198 2 2
+firefox47.0.6 1 0
+firefox72.6.1 1 1
+chrome20.4.7 1 0
+iphone 1 1
+firefox26.4.0 1 1
+firefox23.6.5 1 0
+chrome49.5.4 1 0
+firefox88.6.9 1 0
+chrome71.6.1 1 0
+chrome8.3.4 1 1
+firefox73.7.3 1 0
+chrome87.0.4280.88 3 2
+firefox26.8.7 1 0
+netscape6.0 1 0
+chrome21.1.2 1 1
+Unknown 40 23
+chrome11.4.8 1 0
+chrome90.0.6 1 1
+chrome56.3.6 1 0
+firefox62.0.8 1 1
+firefox93.0 6 6
+msie7.0 1 1
+chrome63.0.3239.132 11 11
+chrome26.0.1410.65 1 1
+firefox16.5.6 1 1
+firefox27.9.5 1 0
+chrome91.0.4472.114 1 1
+firefox76.2.3 1 0
+chrome78.5.8 1 1
+mozilla 4 1
+chrome87.0.4280.67 1 1
+netscape5.0 7 4
+firefox26.3.1 1 1
+chrome48.2.8 1 1
+firefox47.1.0 1 1
+chrome78.4.5 1 0
+firefox16.1.6 1 1
+firefox29.3.9 1 1
+firefox73.3.3 1 0
+safari15.5 1 1
+msie10.0 2 0
+chrome5.7.8 1 0
+safari 18 10
+seamonkey 9 4
+firefox40.0 1 1
+chrome57.0.2987.110 1 1
+firefox41.8.3 1 1
+firefox86.4.2 1 1
+chrome74.8.2 1 1
+chrome15.1.8 1 0
+firefox59.0 1 1
+firefox17.0.4 1 1
+firefox60.1.0 1 0
+chrome105.0.0.0 2 2
+firefox15.2.2 1 1
+firefox53.6.1 1 1
+firefox30.4.3 1 0
+msie9.0 1 1
+msie6.0 3 3
+netscape7.0 4 3
+firefox48.6.5 1 0
+firefox99.8.1 1 1
+chrome26.8.1 1 1
+firefox11.1.9 1 0
+firefox40.1 4 4
+chrome60.2.7 1 1
+firefox73.5.7 1 0
+chrome66.0.3359.158 1 1
+firefox48.7.7 1 0
+chrome107.0.0.0 20 4
+chrome101.0.4951.54 8 2
+chrome81.0.4044.138 2 2
+chrome87.4.3 1 0
+firefox30.7.7 1 1
+chrome34.0.6 1 0
+msie8.0 3 1
+chrome84.0.4147.105 1 1
+android 4 2
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+APIs-Google_(_https://developers.google.com/webmasters/APIs-Google.html) 20221031162030
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+APIs-Google_(_https://developers.google.com/webmasters/APIs-Google.html) 20221031162030
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 108 176
+From1 0 0
+From2 0 0
+From3 6 6
+From4 10 38
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 2
+https://www.ipbuf.com/static/pdns/ipv4/www.telene.ca/index.html 5 5
+https://www.ipbuf.com/static/pdns/ipv4/telene.ca/index.html 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+403 8 80584
+301 2 236
+206 1 739
+404 134 1353289
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 32
+/6ba68409-b856-40a4-bd15-ac6ecaabe571 4 -
+/1c6b2ab3-43a6-453f-8cb0-fd2296007564 4 -
+/c6432a93-e962-486d-986e-f838b34907a2 4 -
+/6426209c-9385-4365-afbb-39dd738a1b7a 4 -
+/10b55a83-6e12-4d37-886a-488f72c8b5cf 4 -
+/c24b7629-502d-48f8-92bb-88e0f7fc1fcb 4 -
+/e00820ef-9018-4a6e-aa63-d600a4825e4a 4 -
+/47e0dc40-1c20-4747-b731-187f16c96b30 4 -
+/videos/-fMjhZB9s1o 3 -
+/e77d49df-30f0-470d-8663-16c4c5f4ff38 4 -
+/14fbed1c-6c13-4f3c-9d45-3926870793c3 4 -
+/296936d3-b27e-4612-8a8f-2022486233d8 4 -
+/a596f69d-35b2-4cce-a16b-17a88a0ad4e4 4 -
+/6b7767a7-7f60-49b8-a6ce-93f54fad430e 4 -
+/5b8003e4-3388-4bd1-92fe-b980fc8f2ba0 4 -
+/fcdb8105-5594-474b-bd7d-0ce0b8bee1df 4 -
+/f5d34fcd-5359-4781-b01d-d70edee7e09a 4 -
+/dbe52553-8603-4e8a-a381-c0a438c0eb94 4 -
+/ads.txt 3 -
+/79038fd4-1fd0-4f87-9252-14581b8cfdcd 4 -
+/91e2caed-c4a4-474d-8d47-5a1f2692751f 4 -
+/humans.txt 3 -
+/64937502-bfc6-4253-b4c2-953eefbd669e 4 -
+/categories/jeunesse 2 -
+/1be97a40-c36b-42c7-b7cb-09f996a7894f 4 -
+/a2ad99b5-96d4-41b5-896e-90dc7b2220a7 4 -
+/b7b5218c-81ec-465c-b65c-5201840ca5f7 4 -
+/5e4d6d20-400f-4c88-b63a-21a912122b91 4 -
+/robots.txt 15 -
+/12da9dc2-22b1-482f-b647-9f8a5913f329 4 -
+/f996cd38-bea4-452f-8e36-3af72ea9faee 4 -
+/wp-login.php 4 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 13
+149.28.228.141 61 115 13953701 20221031162030
+207.148.103.72 20 20 11824 20221031102019
+45.32.205.194 13 27 3750980 20221030163712
+155.138.145.126 8 29 2147169 20221031085633
+149.248.35.160 5 5 3695 20221027204034
+104.207.131.132 5 5 3695 20221028101735
+149.28.118.26 4 10 709031 20221024231404
+45.76.135.107 2 3 560486 20221024092448
+139.180.212.85 2 2 1478 20221021205936
+45.32.79.109 1 1 739 20221021063639
+136.244.96.178 1 1 739 20221024200144
+155.138.163.55 1 1 739 20221024072625
+45.32.139.246 1 1 739 20221008121304
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 28
+20221004 1 1 739 1
+20221005 5 13 1256553 2
+20221006 5 7 537448 3
+20221007 2 5 1061550 1
+20221008 5 8 1063767 3
+20221009 2 4 535664 1
+20221010 3 6 1061856 1
+20221011 2 5 544866 1
+20221012 3 5 536204 1
+20221013 2 4 535898 1
+20221014 5 7 537682 2
+20221015 3 7 1071057 1
+20221016 11 13 540026 6
+20221017 3 6 545605 2
+20221018 4 6 537376 2
+20221019 6 8 538421 3
+20221020 6 8 538421 3
+20221021 5 9 1072968 4
+20221022 2 8 707553 1
+20221023 3 6 1062522 2
+20221024 11 15 1110092 8
+20221025 5 7 537682 3
+20221026 3 7 1071490 2
+20221027 4 6 537376 2
+20221028 6 7 12536 3
+20221029 5 7 537682 2
+20221030 3 7 1071057 1
+20221031 9 28 1980924 3
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 5
+15mn-30mn 3
+5mn-15mn 1
+0s-30s 56
+30s-2mn 4
+30mn-1h 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 3
+/ 79 56164 65 35
+/manifest.json 39 11628 0 26
+/data/videos.yaml 6 201202 0 4
+END_SIDER

@@ -1,185 +1,5 @@
-# Les grandes titres commence ici.
-grandesTitres:
-  - r0Qg_G0rKCE
-  - PyHmG4QvUDU
-  - GCne19hngc0
-
-# Les catégories commence ici.
-catégories:
-  - id: en-vedette
-    titre: En vedette
-
-  - id: nouveau
-    titre: Nouveau
-
-  - id: musique
-    titre: Musique
-
-  - id: danse
-    titre: Danse
-
-  - id: film-theatre
-    titre: Film et théâtre
-
-  - id: arts-visuels
-    titre: Arts visuels
-
-  - id: cuisine
-    titre: Cuisine
-
-  - id: aine
-    titre: Aîné
-
-  - id: jeunesse
-    titre: Jeunesse
-
-  - id: documentaire
-    titre: Documentaire
-
-  - id: variete
-    titre: Variété
-
 # Les vidéos commence ici.
 vidéos:
-  - id: DVh6Fu01cmw
-    titre: Réunions de famille CMA 2024 - la parole aux organisatrices
-    créateur: LE COURRIER DE LA NOUVELLE-ÉCOSSE
-    date: "2023-10-06"
-    couleurFond: ""
-    imageFond: ""
-    image: https://i.ytimg.com/vi/DVh6Fu01cmw/mqdefault.jpg
-    liste: ""
-    catégories:
-      - variete
-    sommaire: ""
-    description: >-
-      Trois organisatrices de réunions de familles acadiennes nous expliquent
-      pourquoi elles ont choisi d'assumer cette responsabilité et ce que cela
-      représente pour elles. Préservation de la culture et des traditions, esprit
-      de partage, transmission, elles nous disent tout !
-  - id: s0Bvd4XcjOM
-    titre: La Femme Acadienne
-    créateur: LE COURRIER DE LA NOUVELLE-ÉCOSSE
-    date: "2023-09-13"
-    couleurFond: ""
-    imageFond: ""
-    image: https://i.ytimg.com/vi/s0Bvd4XcjOM/mqdefault.jpg
-    liste: ""
-    catégories:
-      - variete
-    sommaire: ""
-    description: >-
-      Une conversation avec Gwen Leblanc du CDÉNÉ sur les contributions des femmes
-      acadiennes à leur culture. Nous discutons de la fierté acadienne, de ce qui
-      maintient la culture en vie et de ce que les femmes acadiennes de sa propre
-      vie lui ont apporté.
-  - id: b-CJwXgd1A8
-    titre: >-
-      Phil Comeau - détenteur d'un record du monde Guinness et de l'Ordre de la
-      Nouvelle-Écosse
-    créateur: LE COURRIER DE LA NOUVELLE-ÉCOSSE
-    date: "2023-10-13"
-    couleurFond: ""
-    imageFond: ""
-    image: https://i.ytimg.com/vi/b-CJwXgd1A8/mqdefault.jpg
-    liste: ""
-    catégories:
-      - variete
-    sommaire: ""
-    description: >-
-      Nous rencontrons aujourd'hui Phil Comeau, réalisateur de plus d'une centaine
-      de documentaires, récipiendaire de l'ordre de la Nouvelle-Écosse et
-      détenteur du record mondial Guinness du plus grand nombre de prix remportés
-      par un court métrage documentaire. Son documentaire "Belle-Île en Acadie",
-      sorti en 2019, a reçu 458 prix.
-
-  - id: 1dP2bUYvnvg
-    titre: Un retour sur nos chansons traditionnelles
-    créateur: La Société Saint-Pierre
-    date: 2023-05-09
-    couleurFond:
-    imageFond:
-    image: https://img.youtube.com/vi/1dP2bUYvnvg/hq720.jpg
-    liste:
-    catégories:
-      - musique
-      - aine
-    sommaire: Ce spectacle musical invite les gens à écouter et apprécier la chanson traditionnelle de Chéticamp.
-    description: Ce spectacle musical invite les gens à écouter et apprécier la chanson traditionnelle de Chéticamp.
-
-  - id: r0Qg_G0rKCE
-    titre: Raconte-moi un souvenir
-    créateur: FéCANE
-    date: 2023-03-19
-    couleurFond:
-    imageFond: /data/images/raconte.jpg
-    image: /data/images/raconte.jpg
-    liste:
-    catégories:
-      - documentaire
-      - aine
-    sommaire: Des aînés du village de Pubnico en Nouvelle-Écosse racontent des histoires du passé.
-    description: |-
-      Des aînés du village de Pubnico en Nouvelle-Écosse racontent des histoires du passé.
-
-      Conception, scénarios, direction et entrevues - Yvette d'Entremont
-
-      Caméra, montage et production - Luc d'Eon
-
-      Ce projet est financé par le Gouvernement du Canada par le Programme Nouveaux Horizons pour les aînés et est rendu possible grâce au financement de la CBDC Restigouche Inc.
-
-  - id: PyHmG4QvUDU
-    titre: Étoiles du CSAP
-    créateur: FéCANE
-    date: 2023-03-10
-    couleurFond:
-    imageFond: /data/images/etoiles2023.jpg
-    image: /data/images/etoiles2023.jpg
-    liste:
-    catégories:
-      - musique
-      - jeunesse
-    sommaire: Un spectacle multidisciplinaire mettant en vedette des jeunes francophones de la Nouvelle-Écosse!
-    description: Un spectacle multidisciplinaire mettant en vedette des jeunes francophones de la Nouvelle-Écosse!
-
-  - id: Uaf5bKUaFRA
-    titre: Musique traditionnelle
-    créateur: FéCANE
-    date: 2022-12-08
-    couleurFond:
-    imageFond:
-    image: /data/images/musiquetrad.jpg
-    liste: PLU0B6iCQBwfFNBRIagY1b9A8IVz0tab2C
-    catégories:
-      - musique
-      - aine
-    sommaire:
-    description: |-
-      Une liste de musique traditionnelle acadienne.
-
-  - id: P-l5_Iy1grE
-    titre: La Mame de Pomquet
-    créateur: Société acadienne Sainte-Croix
-    date: 2022-10-16
-    couleurFond:
-    imageFond: /data/images/mame2.jpg
-    image: /data/images/mamedepomquet.jpg
-    liste:
-    catégories:
-      - documentaire
-      - aine
-    sommaire: Weldon Boudreau part à la rencontre des aînés des Pomquet pour recueillir les témoignages du passé.
-    description: |-
-      La Mame de Pomquet est un court-métrage de la Société acadienne Sainte-Croix (SASC) réalisé grâce au soutien financier de Patrimoine Canadien, de l’Office des affaires acadiennes et de la francophonie de la Nouvelle-Écosse, de la Municipality of the County of Antigonish, de Support for culture Nova Scotia, de la Fédération culturelle acadienne de la Nouvelle-Écosse, du Regroupement des aînés de la Nouvelle-Écosse et de la Fédération des femmes acadienne de la Nouvelle-Écosse.
-
-      D’après une idée originale de Weldon Boudreau et d’Yvette Saulnier de partir à la rencontre des aînés des régions acadiennes de la Nouvelle-Écosse pour recueillir les témoignages du passé.
-
-      Pour organiser une projection ou obtenir les droits d’utilisation de la Mame de Pomquet, merci de prendre contact avec Paul Gagnon, directeur général de la SASC à dg@societesaintecroix.ca
-
-      Réalisation: Valentin Alfano
-      Musique: La Source - Weldon Boudreau 
-      Enregistrement et mixage: Georges Hebert
-
   - id: GCne19hngc0
     titre: CTRLZ
     créateur: Mélo et Val
@@ -1035,92 +855,43 @@ vidéos:
       “C’est comme ça” de la comédie musicale Nelson dormait, qui sera présentée du 2 au 5 juin 2022, à la Salle Père-Maurice-LeBlanc à Tusket.
       Signée d’Yvette d’Entremont, Nelson dormait raconte l’histoire de Vince et Rose, une vieille fille et un vieux « batch » (célibataire) du village, qui vont finalement se marier après plusieurs années comme couple. Musique classique et opératique avec paroles parodiées, cette comédie hilarante met en vedette une vingtaine de comédiens et choristes."
 
-  - id: VB8MSDS_Gsw
-    titre: Un souvenir de Noël passé
-    créateur: LE COURRIER DE LA NOUVELLE-ÉCOSSE
-    date: "2023-11-24"
-    couleurFond: ""
-    imageFond: ""
-    image: https://i.ytimg.com/vi/VB8MSDS_Gsw/mqdefault.jpg
-    liste: ""
-    catégories:
-      - variete
-    sommaire: ""
-    description: >-
-      Les quilteuses du Musée des Acadiens des Pubnicos ont passé le jeudi 23
-      novembre à partager des souvenirs de Noël de leur jeunesse. Elles ont parlé
-      de nombreuses traditions telles que la messe de minuit et les compétitions
-      de leur enfance pour savoir qui pouvait réciter le plus de prières avant
-      Noël.
+# Les grandes titres commence ici.
+grandesTitres:
+  - -fMjhZB9s1o
+  - GCne19hngc0
+  - Diumm7mynh8
 
-  - id: 0HusjB6mjKE
-    titre: 2023 Festival du thon de Wedgeport
-    créateur: LE COURRIER DE LA NOUVELLE-ÉCOSSE
-    date: "2023-09-01"
-    couleurFond: ""
-    imageFond: ""
-    image: https://i.ytimg.com/vi/0HusjB6mjKE/mqdefault.jpg
-    liste: ""
-    catégories:
-      - variete
-    sommaire: ""
-    description: >-
-      Le tournoi de thon de Wedgeport s'est achevé sur la victoire de l'Atlantic
-      Angler. Ce tournoi annuel bénéficie d'une grande participation de la
-      communauté. Pendant une semaine, 120 pêcheurs et 16 bateaux se sont
-      affrontés pour remporter le plus gros thon.
+# Les catégories commence ici.
+catégories:
+  - id: en-vedette
+    titre: En vedette
 
-  - id: s__n5a10ryw
-    titre: "Jacques Surette présente son nouvel album : « Conséquences »"
-    créateur: LE COURRIER DE LA NOUVELLE-ÉCOSSE
-    date: "2023-11-10"
-    couleurFond: ""
-    imageFond: ""
-    image: https://i.ytimg.com/vi/s__n5a10ryw/mqdefault.jpg
-    liste: ""
-    catégories:
-      - musique
-    sommaire: ""
-    description: >-
-      Jacques Surette a lancé son nouvel album « Conséquences » le 6 novembre à la
-      Salle Père-Maurice Leblanc à Tusket. Il s'agit du troisième album de Jacques
-      Surette, lancé sous le label " Le Grenier Musique ", un label de Moncton qui
-      met l'accent sur les artistes acadiens.
-  - id: B0NmxuBRpjc
-    titre: Chansons Acadiennes perdues
-    créateur: LE COURRIER DE LA NOUVELLE-ÉCOSSE
-    date: "2023-10-27"
-    couleurFond: ""
-    imageFond: ""
-    image: https://i.ytimg.com/vi/B0NmxuBRpjc/mqdefault.jpg
-    liste: ""
-    catégories:
-      - musique
-    sommaire: ""
-    description: >-
-      Paul Émile a entrepris de recueillir des chansons perdues ou oubliées sur la
-      déportation des Acadiens. Ce passionné de musique recueille depuis longtemps
-      des chansons sur ce thème et réintroduit aujourd'hui son émission
-      radiophonique bihebdomadaire 'Chants de la Dispersion' sur les ondes de
-      Radio-Canada.
+  - id: nouveau
+    titre: Nouveau
 
-  - id: dPYoR7hCqHo
-    titre: Hirondelles - Floristène (live)
-    créateur: Hirondelles_officiel
-    date: "2023-09-10"
-    couleurFond: ""
-    imageFond: ""
-    image: https://i.ytimg.com/vi/dPYoR7hCqHo/mqdefault.jpg
-    liste: ""
-    catégories:
-      - musique
-    sommaire: ""
-    description: >-
-      « Floristène » est une chanson traditionnelle acadienne que l’on retrouve
-      dans la neuvième série des Chansons d’Acadie, les archives du Père Anselme
-      Chiasson. Interprétée auparavant par deux Chéticantains, Joséphine Roach en
-      1957 et Léo (à Pat) Aucoin en 2002, la chanson a aussi été reprise en 2018
-      par le trio québécois Genticorum. Floristène retrouve ses racines et est ici
-      interprétée par le groupe Hirondelles de Chéticamp.
+  - id: musique
+    titre: Musique
 
-      hirondellescheticamp@gmail.com
+  - id: danse
+    titre: Danse
+
+  - id: film-theatre
+    titre: Film et théâtre
+
+  - id: arts-visuels
+    titre: Arts visuels
+
+  - id: cuisine
+    titre: Cuisine
+
+  - id: aine
+    titre: Aîné
+
+  - id: jeunesse
+    titre: Jeunesse
+
+  - id: documentaire
+    titre: Documentaire
+
+  - id: variete
+    titre: Variété

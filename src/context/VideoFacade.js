@@ -151,7 +151,7 @@ class VideoFacade {
       image: video.image,
       playlist: video.liste,
       backgroundImage: video.imageFond,
-      backgroundColor: video.couleurFond ?? "#b30041",
+      backgroundColor: video.couleurFond ?? "222222",
       categories: video["catégories"],
     };
   }

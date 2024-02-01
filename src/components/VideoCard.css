@@ -2,11 +2,11 @@
   position: relative;
   width: 300px;
   height: 170px;
-  background: black;
+  background: rgba(0, 0, 0, 0);
 }
 
 .video-card.animate {
-  transition: all 0.7s;
+  transition: all 0.3s;
 }
 
 .video-card-title {
@@ -22,7 +22,7 @@
   color: #fff;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.2s, visibility 0.2s;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .video-card-title.visible {
@@ -34,13 +34,13 @@
 .video-card-image {
   width: 300px;
   height: 170px;
+  object-fit: cover;
   vertical-align: 0px;
-  transition: all 0.7s;
-  user-select: none;
+  transition: all 0.3s;
 }
 
 .video-card-image.animate {
-  transition: all 0.7s;
+  transition: all 0.3s;
 }
 
 .video-card.hover.animate {
@@ -52,7 +52,8 @@
   width: 330px;
   height: 190px;
   vertical-align: -12px;
-  opacity: 0.3;
+  opacity: 0.6;
+  border: 3px solid #ffffff;
 }
 
 @media only screen and (max-width: 900px) {

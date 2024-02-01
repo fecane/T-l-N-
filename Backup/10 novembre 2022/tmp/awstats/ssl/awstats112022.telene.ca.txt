@@ -1,0 +1,280 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202211 will be lost/reset.
+# Last config file used to build this data file was /home/telen783/tmp/awstats/ssl/awstats.telene.ca.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2010                
+POS_TIME 2675                
+POS_VISITOR 6721                
+POS_DAY 7032                
+POS_DOMAIN 3297                
+POS_LOGIN 3537                
+POS_ROBOT 3692                
+POS_WORMS 4174                
+POS_EMAILSENDER 4305                
+POS_EMAILRECEIVER 4448                
+POS_SESSION 7218                
+POS_SIDER 7386                
+POS_FILETYPES 4583                
+POS_DOWNLOADS 4781                
+POS_OS 4829                
+POS_BROWSER 4961                
+POS_SCREENSIZE 5162                
+POS_UNKNOWNREFERER 5236                
+POS_UNKNOWNREFERERBROWSER 5355                
+POS_ORIGIN 5469                
+POS_SEREFERRALS 5601                
+POS_PAGEREFS 5745                
+POS_SEARCHWORDS 5915                
+POS_KEYWORDS 6067                
+POS_MISC 2339                
+POS_ERRORS 6126                
+POS_CLUSTER 3393                
+POS_SIDER_404 6227                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20221110062809 20 4011 13439278402352
+FirstTime 0
+LastTime 20221109095337
+LastUpdate 20221110071925 20 0 20 0 0
+TotalVisits 12                  
+TotalUnique 6                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 6                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+FlashSupport 0 0 0
+AddToFavourites 0 8 0
+PDFSupport 0 0 0
+JavascriptDisabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+RealPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+JavaEnabled 0 0 0
+TotalMisc 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 4 6 32401
+1 0 0 0 5 8 67824
+2 1 1 739 1 3 20872
+3 0 0 0 2 3 11549
+4 0 0 0 2 2 1478
+5 0 0 0 4 4 30969
+6 0 0 0 9 16 170409
+7 0 0 0 2 9 124168
+8 4 10 743327 4 6 46940
+9 2 2 35404 9 12 63022
+10 1 1 739 1 3 38443
+11 1 1 739 4 7 581807
+12 0 0 0 2 3 11539
+13 4 11 806657 1 3 39172
+14 5 14 815438 2 3 73113
+15 0 0 0 2 2 1478
+16 0 0 0 8 13 604167
+17 3 10 771992 8 10 78281
+18 3 10 771992 7 9 71622
+19 0 0 0 2 6 51089
+20 0 0 0 3 4 11538
+21 0 0 0 5 8 61912
+22 0 0 0 2 3 20883
+23 2 2 1478 3 7 70498
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 2
+us 24 60 3947027
+ca 2 2 1478
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 9
+Googlebot/ 33 841933 20221110061920 0
+bingbot/ 31 22909 20221110062809 0
+Applebot/ 4 570257 20221102162906 0
+facebookexternalhit/ 3 2217 20221108184537 0
+(firefox/)([0-9]\.|[0-1][0]\.) 2 1478 20221105170445 0
+survey 2 1478 20221107185947 0
+Barkrowler 1 0 20221101165506 0
+AhrefsBot/ 1 739 20221105223407 0
+bot[\s_+:,\.\;\/\\-] 1 739 20221103172301 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 8
+json 5 1530 0 0
+svg 1 5617 0 0
+css 5 44840 0 0
+yaml 9 311985 0 0
+js 5 2629425 0 0
+jpg 4 253320 0 0
+html 12 8129 0 0
+png 21 693659 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 5
+macosx14 2 2
+macosx15 35 13
+linuxubuntu 1 1
+win10 23 9
+Unknown 1 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 8
+chrome76.0.3809.132 2 2
+chrome107.0.0.0 35 13
+chrome104.0.0.0 1 1
+Unknown 1 1
+safari16.0 10 3
+chrome105.0.0.0 1 1
+chrome106.0.0.0 11 4
+firefox55.0 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+a_simple_request 20221103113915
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+a_simple_request 20221103113915
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 8 8
+From1 0 0
+From2 0 0
+From3 4 4
+From4 14 50
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 1
+https://fecane.ca 4 4
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+404 61 614223
+206 3 2217
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 8
+/videos/_v1pafmc00A 1 https://telene.ca/videos/_v1pafmc00A
+/robots.txt 37 -
+/atom.xml 3 -
+/sitemap.txt 3 -
+/sitemap_index.xml 4 -
+/sitemap.xml 6 -
+/sitemap.xml.gz 3 -
+/sitemaps.xml 4 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 6
+155.138.145.126 17 46 3138153 20221109095337
+45.32.171.136 4 11 806657 20221103133048
+207.148.103.72 2 2 1478 20221108230030
+149.28.228.141 1 1 739 20221101231530
+45.32.139.246 1 1 739 20221109023113
+104.207.131.132 1 1 739 20221103100708
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 6
+20221101 1 1 739 1
+20221103 9 23 1580127 4
+20221104 4 10 743327 1
+20221107 1 1 739 1
+20221108 9 25 1588169 3
+20221109 2 2 35404 2
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 3
+30s-2mn 1
+5mn-15mn 1
+0s-30s 10
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 3
+/ 12 8129 11 6
+/data/videos.yaml 9 311985 1 5
+/manifest.json 5 1530 0 1
+END_SIDER

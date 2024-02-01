@@ -1,19 +1,20 @@
 .video-list-scroller {
-  margin: 100px 0;
+  margin: 10px 0;
 }
 
 .video-list-scroller:first-child {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .video-list-scroller-category-title {
   font-size: 24px;
   padding-left: 60px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .video-list-scroller-category-link {
-  color: white;
+  color: #f20057;
+  text-shadow: 2px 2px #000000a2;
   text-decoration: none;
 }
 
@@ -21,6 +22,7 @@
   align-items: center;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  mask-image: linear-gradient(to right, black 95%, transparent 100%);
 }
 
 .video-list-scroller-component::-webkit-scrollbar {
@@ -28,12 +30,13 @@
 }
 
 .video-list-scroller-component-item {
-  padding: 0px;
+  padding: 8px;
   height: 190px;
   display: flex;
   align-items: center;
   user-select: none;
   border: none;
+  background-color: transparent;
 }
 
 .video-list-scroller-component-separator {

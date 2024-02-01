@@ -1,19 +1,28 @@
 .video-spotlight-background {
-  height: 750px;
-  width: 100%;
-  background-position: center top;
+  height: 450px;
+  width: 90%;
+  background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: block;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
-  z-index: 0;
+  border: 2px solid #313131fe;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .video-spotlight-info {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 6%;
-  width: 40%;
+  right: 6%;
+  width: 30%;
+  height: 80%;
+  text-shadow: 2px 2px 5px #000000a2;
 }
 
 .video-spotlight-title {
@@ -22,15 +31,16 @@
 }
 
 .video-spotlight-info button {
-  background: #f20057;
+  background: #0000006e;
   color: white;
   height: 50px;
   width: 200px;
-  margin-top: 20px;
+  position: absolute;
+  bottom: 6%;
   font-size: 20px;
   outline: none;
   border: 1px solid #f20057;
-  cursor: pointer;
+  border-radius: 8px;
   font-weight: lighter;
 }
 
@@ -44,6 +54,8 @@
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  z-index: 4;
+  cursor: pointer;
 }
 
 .video-spotlight-selector div {
@@ -54,16 +66,15 @@
   border-radius: 2px;
   display: inline-block;
   margin: 20px;
-  cursor: pointer;
 }
 
 .video-spotlight-selector div.active {
-  background: #404040;
+  background: #ffffff88;
 }
 
 @media only screen and (max-width: 900px) {
   .video-spotlight-background {
-    height: 700px;
+    height: 350px;
   }
 
   .video-spotlight-info-summary {
@@ -79,6 +90,11 @@
     width: 90%;
   }
 
+  .video-spotlight-info button {
+    position: relative;
+    margin-top: 10%;
+  }
+
   .video-spotlight-selector div {
     margin: 10px;
   }
@@ -86,7 +102,7 @@
 
 @media only screen and (max-width: 690px) {
   .video-spotlight-background {
-    height: 400px;
+    height: 300px;
     background-size: cover;
   }
 
@@ -96,6 +112,10 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .video-spotlight-background {
+    height: 250px;
+    background-size: cover;
+  }
 }
 
 @media only screen and (max-width: 350px) {

@@ -36,11 +36,11 @@ const VideoSpotlight = () => {
 
   const render = () => {
     const backgroundImg = {
-      backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0) 60%), url("${videos[current].backgroundImage}")`,
+      backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0.1) 90%), url("${videos[current].backgroundImage}")`,
     };
 
     const backgroundColor = {
-      backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, 0.8) 40%, ${videos[current].backgroundColor})`,
+      backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0.1) 90%), ${videos[current].backgroundColor})`,
     };
     return (
       <div className="video-spotlight" key={videos[current].id}>
@@ -53,9 +53,6 @@ const VideoSpotlight = () => {
           >
             <div className="video-spotlight-info">
               <h1 className="video-spotlight-title">{videos[current].title}</h1>
-              <p className="video-spotlight-info-date">
-                Date : {toFormatDate(videos[current].date)}
-              </p>
               <ReactMarkdown className="video-spotlight-info-summary">
                 {videos[current].summary ?? videos[current].description}
               </ReactMarkdown>
